@@ -1,0 +1,58 @@
+2026-04-16 21:57:37,600 - werkzeug - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2026-04-16 21:57:37,602 - werkzeug - INFO -  * Running on http://192.168.0.100:8080/ (Press CTRL+C to quit)
+2026-04-16 21:57:39,035 - pyrogram.session.auth - INFO - Start creating a new auth key on DC2
+2026-04-16 21:57:39,036 - pyrogram.connection.connection - INFO - Connecting...
+2026-04-16 21:57:39,210 - pyrogram.connection.connection - INFO - Connected! Production DC2 - IPv4
+2026-04-16 21:57:41,022 - pyrogram.session.auth - INFO - Done auth key exchange: DhGenOk
+2026-04-16 21:57:41,023 - pyrogram.connection.connection - INFO - Disconnected
+2026-04-16 21:57:41,047 - pyrogram.connection.connection - INFO - Connecting...
+2026-04-16 21:57:41,213 - pyrogram.connection.connection - INFO - Connected! Production DC2 - IPv4
+2026-04-16 21:57:41,214 - pyrogram.session.session - INFO - NetworkTask started
+2026-04-16 21:57:42,037 - pyrogram.session.session - INFO - Session initialized: Layer 158
+2026-04-16 21:57:42,037 - pyrogram.session.session - INFO - Device: CPython 3.11.9 - Pyrogram 2.0.106
+2026-04-16 21:57:42,038 - pyrogram.session.session - INFO - System: Windows 10 (en)
+2026-04-16 21:57:42,038 - pyrogram.session.session - INFO - Session started
+2026-04-16 21:57:42,042 - pyrogram.session.session - INFO - PingTask started
+2026-04-16 21:57:42,265 - pyrogram.session.session - INFO - PingTask stopped
+2026-04-16 21:57:42,266 - pyrogram.connection.connection - INFO - Disconnected
+2026-04-16 21:57:42,266 - pyrogram.session.session - INFO - NetworkTask stopped
+2026-04-16 21:57:42,267 - pyrogram.session.session - INFO - Session stopped
+2026-04-16 21:57:42,301 - pyrogram.session.auth - INFO - Start creating a new auth key on DC5
+2026-04-16 21:57:42,302 - pyrogram.connection.connection - INFO - Connecting...
+2026-04-16 21:57:42,395 - pyrogram.connection.connection - INFO - Connected! Production DC5 - IPv4
+2026-04-16 21:57:43,935 - pyrogram.session.auth - INFO - Done auth key exchange: DhGenOk
+2026-04-16 21:57:43,937 - pyrogram.connection.connection - INFO - Disconnected
+2026-04-16 21:57:43,955 - pyrogram.connection.connection - INFO - Connecting...
+2026-04-16 21:57:45,067 - pyrogram.connection.connection - INFO - Connected! Production DC5 - IPv4
+2026-04-16 21:57:45,067 - pyrogram.session.session - INFO - NetworkTask started
+2026-04-16 21:57:45,444 - pyrogram.session.session - INFO - Session initialized: Layer 158
+2026-04-16 21:57:45,444 - pyrogram.session.session - INFO - Device: CPython 3.11.9 - Pyrogram 2.0.106
+2026-04-16 21:57:45,444 - pyrogram.session.session - INFO - System: Windows 10 (en)
+2026-04-16 21:57:45,444 - pyrogram.session.session - INFO - Session started
+2026-04-16 21:57:45,445 - pyrogram.session.session - INFO - PingTask started
+2026-04-16 21:57:45,855 - pyrogram.dispatcher - INFO - Started 12 HandlerTasks
+2026-04-16 21:59:41,829 - __main__ - INFO - Queued media from channel 'App Index' (Message ID: 3)
+2026-04-16 21:59:41,832 - __main__ - INFO - Queued media from channel 'App Index' (Message ID: 4)
+2026-04-16 21:59:41,832 - __main__ - INFO - Queued media from channel 'App Index' (Message ID: 5)
+2026-04-16 21:59:41,832 - __main__ - INFO - Processing message 3 in chat -1003727473818
+2026-04-16 21:59:44,192 - __main__ - INFO - Indexed media 3 
+2026-04-16 21:59:44,192 - __main__ - INFO - Processing message 4 in chat -1003727473818
+2026-04-16 21:59:45,018 - __main__ - INFO - Indexed media 4 
+2026-04-16 21:59:45,018 - __main__ - INFO - Processing message 5 in chat -1003727473818
+2026-04-16 21:59:45,592 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-16 22:01:10,215 - __main__ - INFO - Queued media from channel 'App Index' (Message ID: 6)
+2026-04-16 22:01:10,216 - __main__ - INFO - Queued media from channel 'App Index' (Message ID: 7)
+2026-04-16 22:01:10,217 - __main__ - INFO - Queued media from channel 'App Index' (Message ID: 8)
+2026-04-16 22:01:10,217 - __main__ - INFO - Processing message 6 in chat -1003727473818
+2026-04-16 22:01:11,005 - __main__ - INFO - Indexed media 6 
+2026-04-16 22:01:11,007 - __main__ - INFO - Processing message 7 in chat -1003727473818
+2026-04-16 22:01:11,840 - __main__ - INFO - Indexed media 7 
+2026-04-16 22:01:11,840 - __main__ - INFO - Processing message 8 in chat -1003727473818
+2026-04-16 22:01:12,352 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-16 22:05:44,010 - root - INFO - Stop signal received (SIGINT). Exiting...
+2026-04-16 22:05:44,130 - pyrogram.dispatcher - INFO - Stopped 12 HandlerTasks
+2026-04-16 22:05:44,130 - pyrogram.session.session - INFO - PingTask stopped
+2026-04-16 22:05:44,146 - pyrogram.connection.connection - INFO - Disconnected
+2026-04-16 22:05:44,146 - pyrogram.session.session - INFO - NetworkTask stopped
+2026-04-16 22:05:44,148 - pyrogram.session.session - INFO - Session stopped
