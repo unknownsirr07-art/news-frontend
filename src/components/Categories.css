@@ -1,0 +1,99 @@
+/* Container & Title */
+.categories-section {
+  margin-bottom: 0;
+}
+
+.categories-title {
+  font-size: clamp(1.15rem, 2vw, 1.45rem) !important;
+  font-weight: 800 !important;
+  margin-bottom: 12px !important;
+  font-family: 'Inter', -apple-system, sans-serif !important;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* Responsive Grid Layout */
+.categories-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-start;
+}
+
+/* Category Button Base Styling */
+.category-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 7px;
+  padding: 8px 12px !important;
+  border-radius: 8px !important;
+  background-color: #ffffff !important;
+  color: #475569 !important;
+  border: 1px solid #e5e7eb !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  min-height: 38px;
+  min-width: 0;
+  width: auto;
+}
+
+.category-icon {
+  font-size: 19px !important;
+  color: #3b82f6; /* Default icon color */
+  flex-shrink: 0;
+  transition: color 0.3s ease !important;
+}
+
+.category-name {
+  font-weight: 600 !important;
+  font-size: 0.8rem !important;
+  line-height: 1.2 !important;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+/* Hover State */
+.category-button:hover {
+  background-color: #f8fafc !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Active State (Overrides Hover) */
+.category-button.active {
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%) !important;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.3), 0 4px 6px -2px rgba(37, 99, 235, 0.1);
+  z-index: 10;
+}
+
+@media (max-width: 480px) {
+  .categories-grid {
+    gap: 8px;
+  }
+
+  .category-button {
+    flex: 1 1 calc(50% - 8px);
+    min-height: 36px;
+    padding: 8px 10px !important;
+    width: 100%;
+  }
+
+  .category-icon {
+    font-size: 18px !important;
+  }
+
+  .category-name {
+    text-align: left;
+  }
+}
+
+.category-button.active .category-icon {
+  color: #ffffff !important;
+}

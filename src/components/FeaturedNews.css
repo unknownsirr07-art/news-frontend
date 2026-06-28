@@ -1,0 +1,48 @@
+/* Container Spacing */
+.featured-news-wrapper {
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.featured-news-layout {
+  display: block;
+}
+
+.featured-main-col {
+  min-width: 0;
+}
+
+.featured-main-col .news-card {
+  height: auto;
+  min-height: 320px;
+}
+
+/* Base starting state for animations */
+.featured-main-col {
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+/* The Main Featured Article Animation */
+.featured-main-col {
+  animation: slideFadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Sidebar Articles - Staggered Delays for a cool domino effect */
+@media (max-width: 700px) {
+  .featured-main-col .news-card {
+    min-height: 0;
+  }
+}
+
+/* Custom Keyframes for a smooth, modern entrance */
+@keyframes slideFadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

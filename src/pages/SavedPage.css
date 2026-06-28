@@ -1,0 +1,142 @@
+.saved-page-wrapper {
+  background: #f8fafc;
+  min-height: 70vh;
+}
+
+.saved-page-container {
+  padding-bottom: 56px;
+  padding-top: 40px;
+}
+
+.saved-page-header {
+  margin-bottom: 24px;
+}
+
+.saved-title-wrap {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+}
+
+.saved-title-wrap svg {
+  color: #2563eb;
+  font-size: 2rem;
+}
+
+.saved-page-title {
+  color: #0f172a !important;
+  font-size: clamp(1.65rem, 3vw, 2.5rem) !important;
+  font-weight: 900 !important;
+}
+
+.saved-page-subtitle {
+  color: #64748b !important;
+  margin-top: 8px !important;
+}
+
+.saved-empty {
+  align-items: flex-start;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 24px;
+}
+
+.saved-home-button {
+  background-color: #2563eb !important;
+  border-radius: 8px !important;
+  font-weight: 700 !important;
+  margin-top: 8px !important;
+  text-transform: none !important;
+}
+
+.saved-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.saved-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px !important;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.saved-card-action {
+  flex: 1;
+}
+
+.saved-tag {
+  background-color: #eff6ff !important;
+  color: #1d4ed8 !important;
+  font-weight: 700 !important;
+}
+
+.saved-card-title {
+  color: #0f172a !important;
+  display: -webkit-box;
+  font-weight: 800 !important;
+  line-height: 1.25 !important;
+  margin-bottom: 10px !important;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.saved-card-deck {
+  color: #475569 !important;
+  display: -webkit-box;
+  line-height: 1.6 !important;
+  margin-bottom: 16px !important;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.saved-card-meta {
+  color: #64748b !important;
+  font-weight: 700 !important;
+}
+
+.saved-remove-button {
+  align-self: flex-start;
+  color: #b91c1c !important;
+  font-weight: 700 !important;
+  margin: 0 16px 16px !important;
+  text-transform: none !important;
+}
+
+@media (max-width: 900px) {
+  .saved-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .saved-page-container {
+    padding-bottom: 36px;
+    padding-top: 28px;
+  }
+
+  .saved-title-wrap {
+    align-items: flex-start;
+  }
+
+  .saved-title-wrap svg {
+    font-size: 1.6rem;
+  }
+
+  .saved-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .saved-empty {
+    padding: 18px;
+  }
+}

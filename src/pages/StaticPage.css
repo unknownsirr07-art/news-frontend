@@ -1,0 +1,114 @@
+.static-page-wrapper {
+  background: #f6f8fb;
+  min-height: 100vh;
+  padding: 48px 0 64px;
+}
+
+.static-page-shell {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-shadow: 0 12px 24px -20px rgba(15, 23, 42, 0.45);
+  padding: clamp(24px, 4vw, 40px);
+}
+
+.static-eyebrow {
+  color: #2563eb !important;
+  font-size: 0.78rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.08em !important;
+  margin-bottom: 10px !important;
+  text-transform: uppercase;
+}
+
+.static-title {
+  color: #0f172a !important;
+  font-size: clamp(2rem, 4vw, 3rem) !important;
+  font-weight: 900 !important;
+  line-height: 1.08 !important;
+  margin-bottom: 14px !important;
+}
+
+.static-lead {
+  color: #475569 !important;
+  font-size: 1.08rem !important;
+  line-height: 1.7 !important;
+  margin-bottom: 30px !important;
+  max-width: 760px;
+}
+
+.static-section {
+  border-top: 1px solid #eef2f7;
+  padding-top: 24px;
+}
+
+.static-section + .static-section {
+  margin-top: 24px;
+}
+
+.static-section-title {
+  color: #0f172a !important;
+  font-size: 1.12rem !important;
+  font-weight: 800 !important;
+  margin-bottom: 10px !important;
+}
+
+.static-text {
+  color: #475569 !important;
+  line-height: 1.75 !important;
+}
+
+.contact-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+}
+
+.contact-details {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 22px;
+}
+
+.contact-detail-item + .contact-detail-item {
+  margin-top: 18px;
+}
+
+.contact-label {
+  color: #64748b !important;
+  font-size: 0.78rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.06em !important;
+  margin-bottom: 4px !important;
+  text-transform: uppercase;
+}
+
+.contact-value {
+  color: #0f172a !important;
+  font-weight: 700 !important;
+  overflow-wrap: break-word;
+}
+
+.contact-form {
+  display: grid;
+  gap: 16px;
+}
+
+.contact-submit {
+  background: #2563eb !important;
+  border-radius: 8px !important;
+  font-weight: 800 !important;
+  padding: 12px 18px !important;
+  text-transform: none !important;
+}
+
+@media (max-width: 760px) {
+  .static-page-wrapper {
+    padding: 28px 0 44px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}

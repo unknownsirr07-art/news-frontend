@@ -1,0 +1,141 @@
+/* Section & Header Styles */
+.trending-section {
+  margin-top: 0;
+}
+
+.trending-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 22px;
+  flex-wrap: wrap;
+}
+
+.trending-fire-icon {
+  font-size: 30px !important;
+  color: #f97316 !important; /* Orange 500 */
+}
+
+.trending-title {
+  font-family: 'Inter', -apple-system, sans-serif !important;
+  font-size: clamp(1.55rem, 3vw, 2.1rem) !important;
+  font-weight: 800 !important;
+  line-height: 1.15 !important;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* Custom 5-Column Grid Setup */
+.trending-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 14px;
+}
+
+@media (min-width: 1024px) {
+  .trending-grid {
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  }
+}
+
+/* Card Styling */
+.trending-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 18px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 8px 18px -14px rgba(15, 23, 42, 0.45);
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 170px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.trending-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+}
+
+/* Rank & Line */
+.trending-rank-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.trending-rank {
+  font-weight: 800 !important;
+  color: #cbd5e1 !important; /* Gray 300 */
+  transition: color 0.3s ease !important;
+}
+
+/* When the card is hovered, change the rank number color */
+.trending-card:hover .trending-rank {
+  color: #3b82f6 !important; /* Blue 500 */
+}
+
+.trending-line {
+  height: 2px;
+  flex: 1;
+  background: linear-gradient(to right, #3b82f6, transparent);
+  opacity: 0.5;
+}
+
+/* Typography Details */
+.trending-headline {
+  font-weight: 700 !important;
+  color: #0f172a !important; /* Slate 900 */
+  margin-bottom: 8px !important;
+  line-height: 1.3 !important;
+  
+  /* Line Clamping */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  overflow-wrap: anywhere;
+  transition: color 0.3s ease !important;
+}
+
+/* When the card is hovered, change the headline color */
+.trending-card:hover .trending-headline {
+  color: #2563eb !important; /* Blue 600 */
+}
+
+.trending-deck {
+  color: #64748b !important; /* Slate 500 */
+  
+  /* Line Clamping */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+  .trending-header {
+    margin-bottom: 16px;
+  }
+
+  .trending-fire-icon {
+    font-size: 26px !important;
+  }
+
+  .trending-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .trending-card {
+    min-height: 0;
+    padding: 16px;
+  }
+}

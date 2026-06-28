@@ -1,0 +1,114 @@
+.breaking-news-container {
+  background: linear-gradient(135deg, #991b1b 0%, #7f1d1d 100%);
+  border-radius: 8px;
+  padding: 9px 16px;
+  margin-bottom: 14px;
+  border: 1px solid rgba(254, 202, 202, 0.18);
+  box-shadow: 0 12px 28px -20px rgba(127, 29, 29, 0.75);
+  overflow: hidden;
+}
+
+.breaking-news-content {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+}
+
+.breaking-badge {
+  background-color: #ffffff;
+  color: #991b1b;
+  padding: 5px 11px;
+  border-radius: 6px;
+  flex-shrink: 0;
+  box-shadow: 0 6px 14px -10px rgba(15, 23, 42, 0.7);
+  letter-spacing: 0;
+}
+
+/* Marquee Container Setup */
+.marquee-wrapper {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  /* Adds a subtle fade on the left and right edges */
+  mask-image: linear-gradient(to right, transparent, black 4%, black 96%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 4%, black 96%, transparent);
+}
+
+/* Scrolling Text Animation */
+.marquee-text {
+  display: inline-block;
+  color: #ffffff !important;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  animation: marquee-scroll 42s linear infinite;
+  padding-left: 100%; /* Start off-screen to the right */
+}
+
+/* Pause the scrolling if the user hovers over the text */
+.marquee-text:hover {
+  animation-play-state: paused;
+}
+
+.breaking-item {
+  color: #ffffff !important;
+  display: inline;
+  font-weight: 650 !important;
+  letter-spacing: 0;
+  text-decoration: none !important;
+}
+
+.breaking-item:hover {
+  text-decoration: underline !important;
+}
+
+.breaking-separator {
+  display: inline-flex;
+  width: 7px;
+  height: 7px;
+  margin: 0 16px;
+  border-radius: 999px;
+  background-color: #fecaca;
+  box-shadow: 0 0 0 5px rgba(254, 202, 202, 0.14);
+  vertical-align: middle;
+}
+
+/* --- Custom Keyframes --- */
+
+@keyframes marquee-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Responsive Tweaks */
+@media (max-width: 600px) {
+  .breaking-news-container {
+    padding: 8px 12px;
+    margin-bottom: 10px;
+  }
+  .breaking-news-content {
+    gap: 10px;
+  }
+  .breaking-badge {
+    padding: 4px 10px;
+  }
+
+  .marquee-text {
+    animation-duration: 50s;
+    font-size: 0.82rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .breaking-badge {
+    font-size: 0.68rem !important;
+    padding: 4px 8px;
+  }
+
+  .marquee-wrapper {
+    width: 100%;
+  }
+}

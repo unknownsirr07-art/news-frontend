@@ -1,0 +1,91 @@
+/* Wrapper */
+.tag-filter-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+/* Container Spacing */
+.tag-filter-container {
+  padding: 8px 2px 16px; /* Bottom padding ensures hover shadows don't get cut off */
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.tag-filter-container .MuiChip-root {
+  margin: 0 !important;
+}
+
+/* Base Chip Styling */
+.filter-chip {
+  font-family: 'Inter', -apple-system, sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 0.875rem !important;
+  height: 36px !important; /* Set a fixed height instead of top/bottom padding */
+  border-radius: 20px !important; /* Perfect pill shape */
+  border: none !important;
+  transition: all 0.2s ease-in-out !important;
+  cursor: pointer;
+  max-width: min(100%, 180px);
+}
+
+/* Fix text spacing inside the chip */
+.filter-chip .MuiChip-label {
+  padding: 0 16px !important; /* Generous left/right breathing room */
+  z-index: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Default (Unselected) State */
+.chip-default {
+  background-color: #f1f5f9 !important; 
+  color: #475569 !important; 
+}
+
+.chip-default:hover {
+  background-color: #e2e8f0 !important; 
+  color: #0f172a !important; 
+  transform: translateY(-2px);
+}
+
+/* Selected State */
+.chip-selected {
+  background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%) !important;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px -2px rgba(37, 99, 235, 0.3) !important;
+}
+
+.chip-selected:hover {
+  box-shadow: 0 8px 15px -3px rgba(37, 99, 235, 0.4) !important;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 600px) {
+  .tag-filter-wrapper {
+    padding: 0 12px;
+  }
+
+  .tag-filter-container {
+    gap: 6px;
+  }
+
+  .filter-chip {
+    font-size: 0.8rem !important;
+    height: 32px !important;
+    max-width: 116px;
+  }
+  .filter-chip .MuiChip-label {
+    padding: 0 12px !important;
+  }
+}

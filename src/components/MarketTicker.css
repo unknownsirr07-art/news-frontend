@@ -1,0 +1,142 @@
+/* Wrapper & Gradient Background */
+.ticker-wrapper {
+  background: linear-gradient(90deg, #111827 0%, #1f2937 50%, #111827 100%);
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  position: relative;
+  z-index: 1;
+}
+
+.ticker-container {
+  min-height: 40px;
+}
+
+/* Horizontal Layout & Scrolling Setup */
+.ticker-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+  height: 100%;
+  min-height: 40px;
+  overflow-x: auto;
+  white-space: nowrap;
+  
+  /* Hide scrollbar for a cleaner look but keep functionality */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.ticker-content::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+
+/* Ticker Items Setup */
+.ticker-section {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0; /* Prevents squishing on small screens */
+  min-width: 0;
+}
+
+.weather-section {
+  padding-left: 0;
+}
+
+.ticker-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+/* Modern CSS-Rendered Dots */
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot-gold {
+  background-color: #fbbf24;
+  box-shadow: 0 0 8px rgba(251, 191, 36, 0.4);
+}
+
+.dot-silver {
+  background-color: #d1d5db;
+  box-shadow: 0 0 8px rgba(209, 213, 219, 0.4);
+}
+
+.dot-usd {
+  background-color: #60a5fa;
+  box-shadow: 0 0 8px rgba(96, 165, 250, 0.4);
+}
+
+/* Text Styles */
+.ticker-label {
+  color: #9ca3af !important; /* gray-400 */
+  line-height: 1 !important;
+}
+
+.ticker-value {
+  font-weight: 600 !important;
+  color: #ffffff !important;
+  line-height: 1 !important;
+}
+
+.ticker-unit {
+  color: #9ca3af !important;
+  font-weight: 600 !important;
+  line-height: 1 !important;
+}
+
+.ticker-divider {
+  color: #6b7280; /* gray-500 */
+  font-size: 0.875rem;
+}
+
+/* Trend Percentages */
+.trend-up {
+  color: #4ade80 !important; /* green-400 */
+  font-weight: 600 !important;
+  padding-left: 4px;
+}
+
+.trend-down {
+  color: #f87171 !important; /* red-400 */
+  font-weight: 600 !important;
+  padding-left: 4px;
+}
+
+.trend-muted {
+  color: #9ca3af !important;
+  font-weight: 600 !important;
+  padding-left: 4px;
+}
+
+@media (max-width: 700px) {
+  .ticker-container {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .ticker-content {
+    justify-content: flex-start;
+    gap: 16px;
+    min-height: 38px;
+  }
+
+  .ticker-label,
+  .ticker-value,
+  .ticker-unit,
+  .trend-up,
+  .trend-down,
+  .trend-muted {
+    font-size: 0.75rem !important;
+  }
+
+  .ticker-divider {
+    display: none;
+  }
+}
