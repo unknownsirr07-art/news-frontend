@@ -99,7 +99,7 @@ const NewsPage = () => {
 
     const revealTimer = window.setTimeout(() => {
       setContentReady(true);
-    }, 4000);
+    }, 6000);
 
     return () => window.clearTimeout(revealTimer);
   }, [article, loading]);
