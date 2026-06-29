@@ -1,4 +1,4 @@
-const STORAGE_KEY = 'newshub.savedArticles';
+const STORAGE_KEY = 'global-sankshipt.savedArticles';
 
 export const getSavedArticles = () => {
   try {

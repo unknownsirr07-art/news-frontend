@@ -6,12 +6,12 @@ const AboutPage = () => (
   <Box className="static-page-wrapper">
     <Container maxWidth="md">
       <Box className="static-page-shell">
-        <Typography className="static-eyebrow">About NewsHub</Typography>
+        <Typography className="static-eyebrow">About Globalसंक्षिप्त</Typography>
         <Typography component="h1" className="static-title">
           News that stays clear, quick, and useful.
         </Typography>
         <Typography className="static-lead">
-          NewsHub brings together important updates across world news, markets, weather,
+          Globalसंक्षिप्त brings together important updates across world news, markets, weather,
           sports, technology, and public interest stories in a clean reading experience.
         </Typography>
 

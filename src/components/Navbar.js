@@ -69,7 +69,7 @@ const Navbar = () => {
               <Typography variant="h6" fontWeight="bold">N</Typography>
             </Box>
             <Typography variant="h5" className="brand-text">
-              NewsHub
+              Globalसंक्षिप्त
             </Typography>
           </Box>
 

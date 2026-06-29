@@ -44,7 +44,7 @@ const ContactPage = () => {
       await contactService.sendMessage({
         name: form.name.trim(),
         email: form.email.trim(),
-        subject: form.subject.trim() || 'NewsHub contact',
+        subject: form.subject.trim() || 'Globalसंक्षिप्त contact',
         message: form.message.trim(),
       });
       setForm(initialForm);
@@ -62,19 +62,19 @@ const ContactPage = () => {
         <Box className="static-page-shell">
           <Typography className="static-eyebrow">Contact</Typography>
           <Typography component="h1" className="static-title">
-            Contact NewsHub
+            Contact Globalसंक्षिप्त
           </Typography>
           <Typography className="static-lead">
             Use this form for story suggestions, correction requests, product feedback,
-            source issues, or anything that helps us make NewsHub clearer and more useful.
+            source issues, or anything that helps us make Globalसंक्षिप्त clearer and more useful.
           </Typography>
 
           <Box className="contact-grid">
             <Box className="contact-details">
               <Box className="contact-detail-item">
-                <Typography className="contact-label">About NewsHub</Typography>
+                <Typography className="contact-label">About Globalसंक्षिप्त</Typography>
                 <Typography className="contact-value">
-                  NewsHub collects timely stories, summaries, topic filters, weather,
+                  Globalसंक्षिप्त collects timely stories, summaries, topic filters, weather,
                   market updates, and saved reading tools in one simple news experience.
                 </Typography>
               </Box>

@@ -6,11 +6,11 @@ const pages = {
   terms: {
     eyebrow: 'Terms',
     title: 'Terms & Conditions',
-    lead: 'By using NewsHub, you agree to use the site responsibly and respect the content, services, and source links provided here.',
+    lead: 'By using Globalसंक्षिप्त, you agree to use the site responsibly and respect the content, services, and source links provided here.',
     sections: [
       {
         title: 'Use of content',
-        text: 'NewsHub is provided for general information and reading. Story ownership remains with the original publishers and sources where applicable.',
+        text: 'Globalसंक्षिप्त is provided for general information and reading. Story ownership remains with the original publishers and sources where applicable.',
       },
       {
         title: 'Service availability',
@@ -25,7 +25,7 @@ const pages = {
   privacy: {
     eyebrow: 'Privacy',
     title: 'Privacy Policy',
-    lead: 'NewsHub keeps data collection limited to what is needed for the reading experience and contact requests.',
+    lead: 'Globalसंक्षिप्त keeps data collection limited to what is needed for the reading experience and contact requests.',
     sections: [
       {
         title: 'Contact messages',

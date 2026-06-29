@@ -29,7 +29,7 @@ const Footer = () => {
               <Typography variant="h6" fontWeight="bold">N</Typography>
             </Box>
             <Typography variant="h6" component="span" fontWeight="bold" className="brand-name">
-              NewsHub
+              Globalसंक्षिप्त
             </Typography>
           </Box>
 
@@ -47,7 +47,7 @@ const Footer = () => {
         <Box className="footer-bottom">
           <Divider className="footer-divider" />
           <Typography variant="body2" className="copyright-text">
-            &copy; {currentYear} NewsHub. All rights reserved.
+            &copy; {currentYear} Globalसंक्षिप्त. All rights reserved.
           </Typography>
         </Box>
       </Container>

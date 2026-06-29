@@ -181,7 +181,7 @@ const NewsPage = () => {
             className="nav-back-button"
             disableRipple
           >
-            NewsHub
+            Globalसंक्षिप्त
           </Button>
           
           {/* Condensed actions for sticky header */}
@@ -219,7 +219,7 @@ const NewsPage = () => {
               </Avatar>
               <Box>
                 <Typography variant="subtitle2" fontWeight="700" color="#0f172a">
-                  {article.source_title || 'NewsHub Staff'}
+                  {article.source_title || 'Globalसंक्षिप्त Staff'}
                 </Typography>
                 <Box className="meta-details">
                   <span className="meta-item"><CalendarToday fontSize="inherit" /> {article.generated_at && format(new Date(article.generated_at), 'MMM d, yyyy')}</span>
