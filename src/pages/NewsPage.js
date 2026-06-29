@@ -38,6 +38,8 @@ import { newsService } from '../services/api';
 import { isArticleSaved, removeSavedArticle, saveArticle } from '../utils/savedArticles';
 import './NewsPage.css'; 
 
+const AI_SUMMARY_MESSAGE = 'Reading the story, finding the key points, and preparing a clear summary.';
+
 const NewsPage = () => {
   const { slug } = useParams();
   const [article, setArticle] = useState(null);
@@ -47,6 +49,8 @@ const NewsPage = () => {
   const [shareAnchorEl, setShareAnchorEl] = useState(null);
   const [notice, setNotice] = useState('');
   const [scrollProgress, setScrollProgress] = useState(0);
+  const [contentReady, setContentReady] = useState(false);
+  const [typedSummaryText, setTypedSummaryText] = useState('');
 
   // Reading progress tracker
   useEffect(() => {
@@ -83,8 +87,39 @@ const NewsPage = () => {
     };
 
     window.scrollTo(0, 0);
+    setLoading(true);
+    setContentReady(false);
+    setTypedSummaryText('');
+    setArticle(null);
     fetchArticle();
   }, [slug]);
+
+  useEffect(() => {
+    if (loading || !article) return undefined;
+
+    const revealTimer = window.setTimeout(() => {
+      setContentReady(true);
+    }, 4000);
+
+    return () => window.clearTimeout(revealTimer);
+  }, [article, loading]);
+
+  useEffect(() => {
+    if (loading || !article || contentReady) return undefined;
+
+    setTypedSummaryText('');
+    let nextIndex = 0;
+    const typingTimer = window.setInterval(() => {
+      nextIndex += 1;
+      setTypedSummaryText(AI_SUMMARY_MESSAGE.slice(0, nextIndex));
+
+      if (nextIndex >= AI_SUMMARY_MESSAGE.length) {
+        window.clearInterval(typingTimer);
+      }
+    }, 45);
+
+    return () => window.clearInterval(typingTimer);
+  }, [article, contentReady, loading]);
 
   const getArticleUrl = () => window.location.href;
   const getShareText = () => `${article?.headline} - ${getArticleUrl()}`;
@@ -240,22 +275,45 @@ const NewsPage = () => {
 
       {/* Article Content */}
       <Container maxWidth="md" className="article-content-section">
-        
-        {/* Upgraded AI Summary */}
+
         {article.summary && (
-          <Box className="summary-block">
-            <Box className="summary-heading">
-              <Box className="icon-glow-wrap">
-                <AutoAwesome fontSize="small" className="glow-icon" />
+          !contentReady ? (
+            <Box className="ai-summary-loading" role="status" aria-live="polite">
+              <Box className="summary-heading">
+                <Box className="icon-glow-wrap ai-thinking-icon">
+                  <AutoAwesome fontSize="small" className="glow-icon" />
+                </Box>
+                <Typography variant="subtitle1" className="summary-title">
+                  AI is summarising
+                </Typography>
               </Box>
-              <Typography variant="subtitle1" className="summary-title">
-                AI Summary
+              <Box className="ai-thinking-lines">
+                <span />
+                <span />
+                <span />
+              </Box>
+              <Typography variant="body2" className="ai-thinking-copy">
+                {typedSummaryText}
+                <span className="typing-cursor" aria-hidden="true" />
               </Typography>
             </Box>
-            <Typography variant="body1" className="summary-text">
-              {article.summary}
-            </Typography>
-          </Box>
+          ) : (
+            <Box className="article-content-reveal">
+              <Box className="summary-block">
+                <Box className="summary-heading">
+                  <Box className="icon-glow-wrap">
+                    <AutoAwesome fontSize="small" className="glow-icon" />
+                  </Box>
+                  <Typography variant="subtitle1" className="summary-title">
+                    AI Summary
+                  </Typography>
+                </Box>
+                <Typography variant="body1" className="summary-text">
+                  {article.summary}
+                </Typography>
+              </Box>
+            </Box>
+          )
         )}
 
         {/* Article Body */}
