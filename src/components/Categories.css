@@ -19,9 +19,15 @@
 /* Responsive Grid Layout */
 .categories-grid {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 8px;
   justify-content: flex-start;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 2px 2px 12px;
+  scrollbar-width: thin;
+  -webkit-overflow-scrolling: touch;
 }
 
 /* Category Button Base Styling */
@@ -38,7 +44,8 @@
   border: 1px solid #e5e7eb !important;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
   min-height: 38px;
-  min-width: 0;
+  flex: 0 0 auto;
+  min-width: max-content;
   width: auto;
 }
 
@@ -54,7 +61,8 @@
   font-size: 0.8rem !important;
   line-height: 1.2 !important;
   text-align: left;
-  overflow-wrap: anywhere;
+  overflow-wrap: normal;
+  white-space: nowrap;
 }
 
 /* Hover State */
@@ -79,10 +87,10 @@
   }
 
   .category-button {
-    flex: 1 1 calc(50% - 8px);
+    flex: 0 0 auto;
     min-height: 36px;
     padding: 8px 10px !important;
-    width: 100%;
+    width: auto;
   }
 
   .category-icon {

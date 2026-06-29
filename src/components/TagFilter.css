@@ -12,11 +12,14 @@
 .tag-filter-container {
   padding: 8px 2px 16px; /* Bottom padding ensures hover shadows don't get cut off */
   display: flex !important;
-  flex-wrap: wrap !important;
+  flex-wrap: nowrap !important;
   gap: 8px;
   max-width: 100%;
   box-sizing: border-box;
-  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: thin;
+  -webkit-overflow-scrolling: touch;
 }
 
 .tag-filter-container .MuiChip-root {
@@ -33,6 +36,7 @@
   border: none !important;
   transition: all 0.2s ease-in-out !important;
   cursor: pointer;
+  flex: 0 0 auto;
   max-width: min(100%, 180px);
 }
 
@@ -83,7 +87,7 @@
   .filter-chip {
     font-size: 0.8rem !important;
     height: 32px !important;
-    max-width: 116px;
+    max-width: 140px;
   }
   .filter-chip .MuiChip-label {
     padding: 0 12px !important;
