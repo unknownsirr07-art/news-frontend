@@ -66,7 +66,7 @@ const Navbar = () => {
           {/* Logo */}
           <Box component={RouterLink} to="/" className="navbar-brand">
             <Box className="logo-box">
-              <Typography variant="h6" fontWeight="bold">N</Typography>
+              <Box component="img" src="/GS.png" alt="Globalसंक्षिप्त" className="logo-image" />
             </Box>
             <Typography variant="h5" className="brand-text">
               Globalसंक्षिप्त

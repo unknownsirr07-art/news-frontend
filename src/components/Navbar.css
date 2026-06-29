@@ -35,13 +35,20 @@
 .navbar-brand .logo-box {
   width: 40px;
   height: 40px;
-  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+  background: #ffffff;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
   box-shadow: 0 4px 10px rgba(59, 130, 246, 0.3);
+  overflow: hidden;
+}
+
+.navbar-brand .logo-image {
+  display: block;
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
 }
 
 .brand-text {

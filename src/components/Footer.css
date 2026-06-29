@@ -25,13 +25,20 @@
 
 .footer-brand .logo-box {
   align-items: center;
-  background: #2563eb;
+  background: #ffffff;
   border-radius: 8px;
-  color: #ffffff;
   display: flex;
   height: 34px;
   justify-content: center;
+  overflow: hidden;
   width: 34px;
+}
+
+.footer-brand .logo-image {
+  display: block;
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
 }
 
 .brand-name {
