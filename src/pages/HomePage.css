@@ -139,7 +139,7 @@
   }
 
   .widgets-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 14px;
   }
 
@@ -173,5 +173,9 @@
 
   .widgets-container {
     margin-top: 12px !important;
+  }
+
+  .widgets-grid {
+    gap: 8px;
   }
 }
