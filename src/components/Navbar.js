@@ -66,7 +66,15 @@ const Navbar = () => {
           {/* Logo */}
           <Box component={RouterLink} to="/" className="navbar-brand">
             <Box className="logo-box">
-              <Box component="img" src="/GS.png" alt="Globalसंक्षिप्त" className="logo-image" />
+              <Box
+                component="img"
+                src="/GS.png"
+                alt="Global Sankshipt"
+                className="logo-image"
+                width="40"
+                height="40"
+                decoding="async"
+              />
             </Box>
             <Typography variant="h5" className="brand-text">
               Globalसंक्षिप्त
@@ -81,6 +89,7 @@ const Navbar = () => {
                 component={RouterLink}
                 to={item.path}
                 className="nav-link"
+                aria-label={`Open ${item.label} news`}
                 disableRipple
               >
                 {item.label}
@@ -99,6 +108,7 @@ const Navbar = () => {
                 </Badge>
               }
               className="saved-nav-button desktop-only"
+              aria-label={`Open saved articles, ${savedCount} saved`}
               disableRipple
             >
               Saved
@@ -126,6 +136,7 @@ const Navbar = () => {
                 to={item.path}
                 className="mobile-nav-link"
                 onClick={() => setIsMenuOpen(false)}
+                aria-label={`Open ${item.label} news`}
                 fullWidth
               >
                 {item.label}
@@ -136,6 +147,7 @@ const Navbar = () => {
               to="/saved"
               className="mobile-nav-link"
               onClick={() => setIsMenuOpen(false)}
+              aria-label={`Open saved articles, ${savedCount} saved`}
               fullWidth
             >
               Saved Articles {savedCount > 0 ? `(${savedCount})` : ''}

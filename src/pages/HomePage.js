@@ -6,6 +6,15 @@ import {
   Typography
 } from '@mui/material';
 import { newsService, weatherService, marketService } from '../services/api';
+import SEO from '../components/SEO';
+import {
+  DEFAULT_DESCRIPTION,
+  DEFAULT_KEYWORDS,
+  SITE_NAME,
+  SITE_URL,
+  getCanonicalUrl,
+  toTitleCase,
+} from '../utils/seo';
 
 // Importing all our refactored components
 import MarketTicker from '../components/MarketTicker';
@@ -160,9 +169,58 @@ const HomePage = () => {
   });
 
   const allTags = [...new Set(latestNews.flatMap(article => article.tags || []))];
+  const isCategoryPage = activeCategory !== 'home';
+  const categoryName = isCategoryPage ? toTitleCase(activeCategory) : '';
+  const pageTitle = isCategoryPage
+    ? `${categoryName} News | ${SITE_NAME}`
+    : `Latest Breaking News | ${SITE_NAME}`;
+  const pageDescription = isCategoryPage
+    ? `Latest ${categoryName} news and updates.`
+    : DEFAULT_DESCRIPTION;
+  const canonicalPath = isCategoryPage ? `/category/${activeCategory}` : '/';
+  const homeSchemas = isCategoryPage
+    ? [{
+        '@context': 'https://schema.org',
+        '@type': 'CollectionPage',
+        name: pageTitle,
+        description: pageDescription,
+        url: getCanonicalUrl(canonicalPath),
+        isPartOf: {
+          '@type': 'WebSite',
+          name: SITE_NAME,
+          url: SITE_URL,
+        },
+      }]
+    : [
+        {
+          '@context': 'https://schema.org',
+          '@type': 'WebSite',
+          name: SITE_NAME,
+          url: SITE_URL,
+          potentialAction: {
+            '@type': 'SearchAction',
+            target: `${SITE_URL}/?q={search_term_string}`,
+            'query-input': 'required name=search_term_string',
+          },
+        },
+        {
+          '@context': 'https://schema.org',
+          '@type': 'Organization',
+          name: SITE_NAME,
+          url: SITE_URL,
+          logo: `${SITE_URL}/GS.png`,
+        },
+      ];
 
   return (
     <Box className="homepage-wrapper">
+      <SEO
+        title={pageTitle}
+        description={pageDescription}
+        canonicalPath={canonicalPath}
+        keywords={isCategoryPage ? [categoryName, `${categoryName} news`, ...DEFAULT_KEYWORDS] : DEFAULT_KEYWORDS}
+        jsonLd={homeSchemas}
+      />
       
       {/* 1. Market Ticker (Replaces inline top bar) */}
       <MarketTicker marketData={marketData} weatherData={weather} weatherLocation={weatherLocation} />

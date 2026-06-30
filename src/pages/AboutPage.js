@@ -1,9 +1,16 @@
 import React from 'react';
 import { Box, Container, Typography } from '@mui/material';
+import SEO from '../components/SEO';
+import { SITE_NAME } from '../utils/seo';
 import './StaticPage.css';
 
 const AboutPage = () => (
   <Box className="static-page-wrapper">
+    <SEO
+      title={`About | ${SITE_NAME}`}
+      description="Learn about Global Sankshipt, a clear and useful news experience for headlines, summaries, topics, weather, and market updates."
+      canonicalPath="/about"
+    />
     <Container maxWidth="md">
       <Box className="static-page-shell">
         <Typography className="static-eyebrow">About Globalसंक्षिप्त</Typography>

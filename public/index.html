@@ -3,13 +3,35 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/GS.png" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/GS.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#3B82F6" />
-    <meta name="description" content="Modern News Website with Latest Updates" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <title>Globalसंक्षिप्त - Stay Informed</title>
+    <meta name="theme-color" content="#2563eb" />
+    <meta name="description" content="Latest breaking news from India and around the world covering politics, business, technology, sports, entertainment and more." />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <link rel="preconnect" href="https://news-backend-bffs.onrender.com" />
+    <link rel="dns-prefetch" href="https://news-backend-bffs.onrender.com" />
+    <link rel="preconnect" href="https://ipwho.is" />
+    <link rel="dns-prefetch" href="https://ipwho.is" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <script>
+      (function () {
+        var measurementId = '%REACT_APP_GA_MEASUREMENT_ID%';
+        if (!measurementId || measurementId.indexOf('REACT_APP_') !== -1) return;
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=' + measurementId;
+        document.head.appendChild(script);
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function(){ window.dataLayer.push(arguments); };
+        window.gtag('js', new Date());
+        window.gtag('config', measurementId);
+      })();
+    </script>
+    <title>Latest Breaking News | Global Sankshipt</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

@@ -9,6 +9,8 @@ import {
   Typography,
 } from '@mui/material';
 import { contactService } from '../services/api';
+import SEO from '../components/SEO';
+import { SITE_NAME } from '../utils/seo';
 import './StaticPage.css';
 
 const initialForm = {
@@ -58,6 +60,11 @@ const ContactPage = () => {
 
   return (
     <Box className="static-page-wrapper">
+      <SEO
+        title={`Contact | ${SITE_NAME}`}
+        description="Contact Global Sankshipt for story suggestions, correction requests, product feedback, and source issues."
+        canonicalPath="/contact"
+      />
       <Container maxWidth="lg">
         <Box className="static-page-shell">
           <Typography className="static-eyebrow">Contact</Typography>

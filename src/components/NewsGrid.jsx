@@ -28,7 +28,7 @@ const NewsGrid = ({ news, loading = false }) => {
   if (!news?.length) {
     return (
       <Box className="empty-news-state">
-        <Typography variant="h1" className="empty-emoji">
+        <Typography component="div" variant="h1" className="empty-emoji" aria-hidden="true">
           📰
         </Typography>
         <Typography variant="h5" className="empty-title">

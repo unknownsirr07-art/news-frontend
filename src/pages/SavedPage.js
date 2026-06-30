@@ -14,6 +14,8 @@ import {
 import { Bookmark, Close } from '@mui/icons-material';
 import { format } from 'date-fns';
 import { getSavedArticles, removeSavedArticle } from '../utils/savedArticles';
+import SEO from '../components/SEO';
+import { SITE_NAME } from '../utils/seo';
 import './SavedPage.css';
 
 
@@ -30,11 +32,17 @@ const SavedPage = () => {
 
   return (
     <Box className="saved-page-wrapper">
+      <SEO
+        title={`Saved Articles | ${SITE_NAME}`}
+        description="Articles saved locally on this device."
+        canonicalPath="/saved"
+        robots="noindex, follow"
+      />
       <Container maxWidth="lg" className="saved-page-container">
         <Box className="saved-page-header">
           <Box className="saved-title-wrap">
             <Bookmark />
-            <Typography variant="h3" className="saved-page-title">
+            <Typography component="h1" variant="h3" className="saved-page-title">
               Saved Articles
             </Typography>
           </Box>

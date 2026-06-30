@@ -202,6 +202,21 @@
   padding-top: 40px;
 }
 
+.article-featured-image-wrap {
+  aspect-ratio: 16 / 9;
+  border-radius: 16px;
+  margin-bottom: 32px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.article-featured-image {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
 .summary-block {
   background: linear-gradient(145deg, #f8fafc 0%, #eff6ff 100%);
   border: 1px solid #dbeafe;

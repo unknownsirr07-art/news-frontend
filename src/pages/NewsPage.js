@@ -33,9 +33,22 @@ import {
   WhatsApp,
   Email
 } from '@mui/icons-material';
+import Facebook from '@mui/icons-material/Facebook';
+import LinkedIn from '@mui/icons-material/LinkedIn';
+import Telegram from '@mui/icons-material/Telegram';
 import { format } from 'date-fns';
 import { newsService } from '../services/api';
 import { isArticleSaved, removeSavedArticle, saveArticle } from '../utils/savedArticles';
+import SEO from '../components/SEO';
+import {
+  SITE_NAME,
+  SITE_URL,
+  getArticleDescription,
+  getArticleImage,
+  getArticleKeywords,
+  getCanonicalUrl,
+  getReadingTime,
+} from '../utils/seo';
 import './NewsPage.css'; 
 
 const AI_SUMMARY_MESSAGE = 'Reading the story, finding the key points, and preparing a clear summary.';
@@ -121,7 +134,7 @@ const NewsPage = () => {
     return () => window.clearInterval(typingTimer);
   }, [article, contentReady, loading]);
 
-  const getArticleUrl = () => window.location.href;
+  const getArticleUrl = () => article ? getCanonicalUrl(`/article/${article.slug}`) : window.location.href;
   const getShareText = () => `${article?.headline} - ${getArticleUrl()}`;
 
   const copyArticleLink = async () => {
@@ -169,6 +182,9 @@ const NewsPage = () => {
     const body = encodeURIComponent(getShareText());
     const targets = {
       whatsapp: `https://wa.me/?text=${body}`,
+      telegram: `https://t.me/share/url?url=${url}&text=${text}`,
+      facebook: `https://www.facebook.com/sharer/sharer.php?u=${url}`,
+      linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${url}`,
       x: `https://twitter.com/intent/tweet?text=${text}&url=${url}`,
       email: `mailto:?subject=${text}&body=${body}`,
     };
@@ -187,7 +203,13 @@ const NewsPage = () => {
   if (!article) {
     return (
       <Box className="center-screen flex-column">
-        <Typography variant="h1" className="not-found-emoji">📰</Typography>
+        <SEO
+          title={`Story Not Found | ${SITE_NAME}`}
+          description="The requested story could not be found."
+          canonicalPath="/404"
+          robots="noindex, nofollow"
+        />
+        <Typography component="div" variant="h1" className="not-found-emoji" aria-hidden="true">📰</Typography>
         <Typography variant="h4" fontWeight="bold" gutterBottom>
           Story Not Found
         </Typography>
@@ -198,8 +220,54 @@ const NewsPage = () => {
     );
   }
 
+  const description = getArticleDescription(article);
+  const image = getArticleImage(article);
+  const keywords = getArticleKeywords(article);
+  const canonicalPath = `/article/${article.slug}`;
+  const readingTime = getReadingTime(article);
+  const articleAuthor = article.author || article.source_title || `${SITE_NAME} Staff`;
+  const publishedDate = article.generated_at || article.updated_at;
+  const updatedDate = article.updated_at || article.generated_at;
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'NewsArticle',
+    headline: article.headline,
+    description,
+    image: [image],
+    author: {
+      '@type': 'Person',
+      name: articleAuthor,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: SITE_NAME,
+      logo: {
+        '@type': 'ImageObject',
+        url: `${SITE_URL}/GS.png`,
+      },
+    },
+    datePublished: publishedDate,
+    dateModified: updatedDate,
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': getCanonicalUrl(canonicalPath),
+    },
+    articleSection: article.category || article.tags?.[0],
+    keywords: keywords.join(', '),
+  };
+
   return (
     <Box className="article-page-wrapper">
+      <SEO
+        title={`${article.headline} | ${SITE_NAME}`}
+        description={description}
+        canonicalPath={canonicalPath}
+        image={image}
+        type="article"
+        keywords={keywords}
+        author={articleAuthor}
+        jsonLd={articleSchema}
+      />
       
       {/* Reading Progress Bar */}
       <Box className="progress-bar-container">
@@ -249,17 +317,23 @@ const NewsPage = () => {
           {/* Premium Meta Info Layout */}
           <Box className="article-meta">
             <Box className="meta-author-group">
-              <Avatar sx={{ width: 40, height: 40, bgcolor: '#2563eb' }}>
+              <Avatar sx={{ width: 40, height: 40, bgcolor: '#2563eb' }} aria-label={article.source_title || articleAuthor}>
                 {article.source_title?.charAt(0) || 'N'}
               </Avatar>
               <Box>
                 <Typography variant="subtitle2" fontWeight="700" color="#0f172a">
-                  {article.source_title || 'Globalसंक्षिप्त Staff'}
+                  {articleAuthor}
                 </Typography>
                 <Box className="meta-details">
-                  <span className="meta-item"><CalendarToday fontSize="inherit" /> {article.generated_at && format(new Date(article.generated_at), 'MMM d, yyyy')}</span>
+                  <span className="meta-item"><CalendarToday fontSize="inherit" /> {publishedDate && format(new Date(publishedDate), 'MMM d, yyyy')}</span>
                   <span className="meta-dot">•</span>
-                  <span className="meta-item"><AccessTime fontSize="inherit" /> 5 min read</span>
+                  <span className="meta-item"><AccessTime fontSize="inherit" /> {readingTime} min read</span>
+                  {updatedDate && updatedDate !== publishedDate && (
+                    <>
+                      <span className="meta-dot">•</span>
+                      <span className="meta-item">Updated {format(new Date(updatedDate), 'MMM d, yyyy')}</span>
+                    </>
+                  )}
                 </Box>
               </Box>
             </Box>
@@ -275,6 +349,19 @@ const NewsPage = () => {
 
       {/* Article Content */}
       <Container maxWidth="md" className="article-content-section">
+        {article.image && (
+          <Box className="article-featured-image-wrap">
+            <img
+              src={image}
+              alt={article.headline}
+              className="article-featured-image"
+              loading="eager"
+              width="960"
+              height="540"
+              decoding="async"
+            />
+          </Box>
+        )}
 
         {article.summary && (
           !contentReady ? (
@@ -358,6 +445,9 @@ const NewsPage = () => {
         <Menu anchorEl={shareAnchorEl} open={Boolean(shareAnchorEl)} onClose={() => setShareAnchorEl(null)} PaperProps={{ elevation: 3, sx: { mt: 1, borderRadius: 2, minWidth: 180 } }}>
           <MenuItem onClick={copyArticleLink}><ContentCopy fontSize="small" className="share-menu-icon" /> Copy Link</MenuItem>
           <MenuItem onClick={() => openShareTarget('whatsapp')}><WhatsApp fontSize="small" className="share-menu-icon" /> WhatsApp</MenuItem>
+          <MenuItem onClick={() => openShareTarget('telegram')}><Telegram fontSize="small" className="share-menu-icon" /> Telegram</MenuItem>
+          <MenuItem onClick={() => openShareTarget('facebook')}><Facebook fontSize="small" className="share-menu-icon" /> Facebook</MenuItem>
+          <MenuItem onClick={() => openShareTarget('linkedin')}><LinkedIn fontSize="small" className="share-menu-icon" /> LinkedIn</MenuItem>
           <MenuItem onClick={() => openShareTarget('x')}><Share fontSize="small" className="share-menu-icon" /> X (Twitter)</MenuItem>
           <MenuItem onClick={() => openShareTarget('email')}><Email fontSize="small" className="share-menu-icon" /> Email</MenuItem>
         </Menu>

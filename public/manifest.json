@@ -1,6 +1,7 @@
 {
-  "short_name": "Globalसंक्षिप्त",
-  "name": "Globalसंक्षिप्त",
+  "short_name": "Global Sankshipt",
+  "name": "Global Sankshipt",
+  "description": "Latest breaking news from India and around the world.",
   "icons": [
     {
       "src": "GS.png",
@@ -18,8 +19,8 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
-  "theme_color": "#000000",
+  "theme_color": "#2563eb",
   "background_color": "#ffffff"
 }

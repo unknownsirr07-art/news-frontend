@@ -1,5 +1,7 @@
 import React from 'react';
 import { Box, Container, Typography } from '@mui/material';
+import SEO from '../components/SEO';
+import { SITE_NAME } from '../utils/seo';
 import './StaticPage.css';
 
 const pages = {
@@ -45,9 +47,15 @@ const pages = {
 
 const StaticPage = ({ type }) => {
   const page = pages[type] || pages.terms;
+  const canonicalPath = type === 'privacy' ? '/privacy' : '/terms';
 
   return (
     <Box className="static-page-wrapper">
+      <SEO
+        title={`${page.title} | ${SITE_NAME}`}
+        description={page.lead}
+        canonicalPath={canonicalPath}
+      />
       <Container maxWidth="md">
         <Box className="static-page-shell">
           <Typography className="static-eyebrow">{page.eyebrow}</Typography>

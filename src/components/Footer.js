@@ -26,7 +26,16 @@ const Footer = () => {
         <Box className="footer-top">
           <Box className="footer-brand">
             <Box className="logo-box">
-              <Box component="img" src="/GS.png" alt="Globalसंक्षिप्त" className="logo-image" />
+              <Box
+                component="img"
+                src="/GS.png"
+                alt="Global Sankshipt"
+                className="logo-image"
+                loading="lazy"
+                width="40"
+                height="40"
+                decoding="async"
+              />
             </Box>
             <Typography variant="h6" component="span" fontWeight="bold" className="brand-name">
               Globalसंक्षिप्त
