@@ -56,6 +56,8 @@ const AI_SUMMARY_MESSAGE = 'Reading the story, finding the key points, and prepa
 const NewsPage = () => {
   const { slug } = useParams();
   const [article, setArticle] = useState(null);
+  const [articleLoadError, setArticleLoadError] = useState(false);
+  const [articleNotFound, setArticleNotFound] = useState(false);
   const [relatedNews, setRelatedNews] = useState([]);
   const [loading, setLoading] = useState(true);
   const [saved, setSaved] = useState(false);
@@ -82,6 +84,8 @@ const NewsPage = () => {
       try {
         const response = await newsService.getArticleBySlug(slug);
         setArticle(response.data);
+        setArticleNotFound(false);
+        setArticleLoadError(false);
         setSaved(isArticleSaved(response.data.slug));
         
         if (response.data.tags?.length) {
@@ -94,6 +98,16 @@ const NewsPage = () => {
         }
       } catch (error) {
         console.error('Error:', error);
+        setArticle(null);
+        setRelatedNews([]);
+        setSaved(false);
+        if (error?.response?.status === 404) {
+          setArticleNotFound(true);
+          setArticleLoadError(false);
+        } else {
+          setArticleNotFound(false);
+          setArticleLoadError(true);
+        }
       } finally {
         setLoading(false);
       }
@@ -104,6 +118,8 @@ const NewsPage = () => {
     setContentReady(false);
     setTypedSummaryText('');
     setArticle(null);
+    setArticleLoadError(false);
+    setArticleNotFound(false);
     fetchArticle();
   }, [slug]);
 
@@ -200,7 +216,28 @@ const NewsPage = () => {
     );
   }
 
-  if (!article) {
+  if (articleLoadError) {
+    return (
+      <Box className="center-screen flex-column">
+        <SEO
+          title={`Article Temporarily Unavailable | ${SITE_NAME}`}
+          description="This article is temporarily unavailable. Please try again shortly."
+          canonicalPath={`/article/${slug}`}
+        />
+        <Typography component="h1" variant="h5" fontWeight="bold" gutterBottom>
+          Article temporarily unavailable
+        </Typography>
+        <Typography variant="body1" mb={2}>
+          We could not load this story right now. Please refresh and try again.
+        </Typography>
+        <Link component={RouterLink} to="/" className="back-link">
+          ← Return to Front Page
+        </Link>
+      </Box>
+    );
+  }
+
+  if (articleNotFound || !article) {
     return (
       <Box className="center-screen flex-column">
         <SEO

@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /saved
+Disallow: /404
+Disallow: /500
 
 Sitemap: https://globalsankshipt.in/sitemap.xml
