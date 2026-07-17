@@ -2,6 +2,7 @@ import React from 'react';
 import { Link as RouterLink } from 'react-router-dom';
 import { Box, Typography } from '@mui/material';
 import LocalFireDepartmentIcon from '@mui/icons-material/LocalFireDepartment';
+import { getArticleImage } from '../utils/seo';
 import './TrendingSection.css';
 
 const TrendingSection = ({ news }) => {
@@ -27,6 +28,9 @@ const TrendingSection = ({ news }) => {
             to={`/article/${article.slug}`}
             className="trending-card"
           >
+            <Box className="trending-image-wrap">
+              <img src={getArticleImage(article)} alt="" className="trending-image" loading="lazy" decoding="async" />
+            </Box>
             {/* Rank Number & Decorative Line */}
             <Box className="trending-rank-container">
               <Typography variant="h4" className="trending-rank">

@@ -19,6 +19,10 @@
   box-sizing: border-box;
 }
 
+.news-card-image-link { display: block; aspect-ratio: 16 / 8; overflow: hidden; background: #e2e8f0; }
+.news-card-image { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform 0.35s ease; }
+.news-card:hover .news-card-image { transform: scale(1.045); }
+
 /* Standard Card Theme */
 .news-card-standard {
   background-color: #ffffff !important;
@@ -42,6 +46,8 @@
   padding: clamp(22px, 3vw, 32px) !important;
   justify-content: flex-end;
 }
+
+.news-card-featured .news-card-image-link { aspect-ratio: 16 / 6; }
 
 .news-card-featured:hover {
   transform: translateY(-6px);
