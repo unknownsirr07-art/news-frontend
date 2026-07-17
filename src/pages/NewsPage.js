@@ -403,6 +403,7 @@ const NewsPage = () => {
 
       {/* Article Content */}
       <Container maxWidth="md" className="article-content-section">
+        {/* Article image paused until the image rollout is enabled again.
         {article.image && (
           <Box className="article-featured-image-wrap">
             <img
@@ -416,6 +417,7 @@ const NewsPage = () => {
             />
           </Box>
         )}
+        */}
 
         {article.summary && (
           !contentReady ? (
