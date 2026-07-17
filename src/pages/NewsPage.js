@@ -345,6 +345,7 @@ const NewsPage = () => {
             {article.headline}
           </Typography>
           
+          {/* Image-deck layout paused until the image rollout is enabled again.
           {article.image && (
             <Box className="article-deck-image-wrap">
               <img src={image} alt={article.headline} className="article-deck-image" loading="eager" width="960" height="540" decoding="async" />
@@ -358,6 +359,13 @@ const NewsPage = () => {
 
           {!article.image && article.deck && (
             <Typography variant="h2" className="article-deck article-deck-without-image">{article.deck}</Typography>
+          )}
+          */}
+
+          {article.deck && (
+            <Typography variant="h2" className="article-deck">
+              {article.deck}
+            </Typography>
           )}
 
           {/* Premium Meta Info Layout */}
@@ -395,6 +403,20 @@ const NewsPage = () => {
 
       {/* Article Content */}
       <Container maxWidth="md" className="article-content-section">
+        {article.image && (
+          <Box className="article-featured-image-wrap">
+            <img
+              src={image}
+              alt={article.headline}
+              className="article-featured-image"
+              loading="eager"
+              width="960"
+              height="540"
+              decoding="async"
+            />
+          </Box>
+        )}
+
         {article.summary && (
           !contentReady ? (
             <Box className="ai-summary-loading" role="status" aria-live="polite">

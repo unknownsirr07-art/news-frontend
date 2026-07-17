@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link as RouterLink } from 'react-router-dom';
 import { Card, CardContent, Typography, Chip, Box, Stack, Link } from '@mui/material';
-import { getArticleImage } from '../utils/seo';
+// import { getArticleImage } from '../utils/seo'; // Paused image-card rollout.
 import './NewsCard.css';
 
 const NewsCard = ({ article, variant = 'standard' }) => {
@@ -18,7 +18,7 @@ const NewsCard = ({ article, variant = 'standard' }) => {
   };
 
   const isFeatured = variant === 'featured';
-  const image = getArticleImage(article);
+  // const image = getArticleImage(article); // Paused image-card rollout.
 
   return (
     <Card 
@@ -26,9 +26,11 @@ const NewsCard = ({ article, variant = 'standard' }) => {
       className={`news-card ${isFeatured ? 'news-card-featured' : 'news-card-standard'}`}
       elevation={0}
     >
+      {/* Image-card layout paused until the image rollout is enabled again.
       <Link component={RouterLink} to={`/article/${article.slug}`} className="news-card-image-link" aria-label={`Read ${article.headline}`} underline="none">
         <img src={image} alt="" className="news-card-image" loading="lazy" decoding="async" />
       </Link>
+      */}
       <CardContent className="news-card-content">
         
         {/* Tags */}

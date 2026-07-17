@@ -132,6 +132,7 @@
   letter-spacing: -1px;
 }
 
+/* Paused image-deck styling.
 .article-deck {
   font-size: clamp(1.2rem, 2.5vw, 1.5rem) !important;
   color: #ffffff !important;
@@ -178,6 +179,15 @@
 .article-deck-overlay .article-deck { position: relative; z-index: 1; text-shadow: 0 2px 14px rgba(15, 23, 42, 0.48); }
 
 .article-deck-without-image { color: #475569 !important; margin: 0 0 32px !important; }
+*/
+
+.article-deck {
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem) !important;
+  color: #475569;
+  line-height: 1.5 !important;
+  margin-bottom: 32px !important;
+  font-weight: 400 !important;
+}
 
 /* Premium Meta Layout */
 .article-meta {
@@ -239,6 +249,21 @@
 /* Article Content & AI Summary */
 .article-content-section {
   padding-top: 40px;
+}
+
+.article-featured-image-wrap {
+  aspect-ratio: 16 / 9;
+  border-radius: 16px;
+  margin-bottom: 32px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.article-featured-image {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
 }
 
 .summary-block {

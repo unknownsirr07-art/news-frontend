@@ -70,9 +70,11 @@
   margin-bottom: 12px;
 }
 
+/* Paused image-card styling.
 .trending-image-wrap { aspect-ratio: 16 / 8; margin: -18px -18px 16px; overflow: hidden; background: #e2e8f0; }
 .trending-image { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform 0.35s ease; }
 .trending-card:hover .trending-image { transform: scale(1.045); }
+*/
 
 .trending-rank {
   font-weight: 800 !important;
@@ -143,5 +145,5 @@
     padding: 16px;
   }
 
-  .trending-image-wrap { margin: -16px -16px 14px; }
+  /* .trending-image-wrap { margin: -16px -16px 14px; } */
 }
