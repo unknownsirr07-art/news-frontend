@@ -1,58 +1,644 @@
-2026-04-16 21:57:37,600 - werkzeug - WARNING -  * Running on all addresses.
+2026-04-19 09:22:48,116 - werkzeug - WARNING -  * Running on all addresses.
    WARNING: This is a development server. Do not use it in a production deployment.
-2026-04-16 21:57:37,602 - werkzeug - INFO -  * Running on http://192.168.0.100:8080/ (Press CTRL+C to quit)
-2026-04-16 21:57:39,035 - pyrogram.session.auth - INFO - Start creating a new auth key on DC2
-2026-04-16 21:57:39,036 - pyrogram.connection.connection - INFO - Connecting...
-2026-04-16 21:57:39,210 - pyrogram.connection.connection - INFO - Connected! Production DC2 - IPv4
-2026-04-16 21:57:41,022 - pyrogram.session.auth - INFO - Done auth key exchange: DhGenOk
-2026-04-16 21:57:41,023 - pyrogram.connection.connection - INFO - Disconnected
-2026-04-16 21:57:41,047 - pyrogram.connection.connection - INFO - Connecting...
-2026-04-16 21:57:41,213 - pyrogram.connection.connection - INFO - Connected! Production DC2 - IPv4
-2026-04-16 21:57:41,214 - pyrogram.session.session - INFO - NetworkTask started
-2026-04-16 21:57:42,037 - pyrogram.session.session - INFO - Session initialized: Layer 158
-2026-04-16 21:57:42,037 - pyrogram.session.session - INFO - Device: CPython 3.11.9 - Pyrogram 2.0.106
-2026-04-16 21:57:42,038 - pyrogram.session.session - INFO - System: Windows 10 (en)
-2026-04-16 21:57:42,038 - pyrogram.session.session - INFO - Session started
-2026-04-16 21:57:42,042 - pyrogram.session.session - INFO - PingTask started
-2026-04-16 21:57:42,265 - pyrogram.session.session - INFO - PingTask stopped
-2026-04-16 21:57:42,266 - pyrogram.connection.connection - INFO - Disconnected
-2026-04-16 21:57:42,266 - pyrogram.session.session - INFO - NetworkTask stopped
-2026-04-16 21:57:42,267 - pyrogram.session.session - INFO - Session stopped
-2026-04-16 21:57:42,301 - pyrogram.session.auth - INFO - Start creating a new auth key on DC5
-2026-04-16 21:57:42,302 - pyrogram.connection.connection - INFO - Connecting...
-2026-04-16 21:57:42,395 - pyrogram.connection.connection - INFO - Connected! Production DC5 - IPv4
-2026-04-16 21:57:43,935 - pyrogram.session.auth - INFO - Done auth key exchange: DhGenOk
-2026-04-16 21:57:43,937 - pyrogram.connection.connection - INFO - Disconnected
-2026-04-16 21:57:43,955 - pyrogram.connection.connection - INFO - Connecting...
-2026-04-16 21:57:45,067 - pyrogram.connection.connection - INFO - Connected! Production DC5 - IPv4
-2026-04-16 21:57:45,067 - pyrogram.session.session - INFO - NetworkTask started
-2026-04-16 21:57:45,444 - pyrogram.session.session - INFO - Session initialized: Layer 158
-2026-04-16 21:57:45,444 - pyrogram.session.session - INFO - Device: CPython 3.11.9 - Pyrogram 2.0.106
-2026-04-16 21:57:45,444 - pyrogram.session.session - INFO - System: Windows 10 (en)
-2026-04-16 21:57:45,444 - pyrogram.session.session - INFO - Session started
-2026-04-16 21:57:45,445 - pyrogram.session.session - INFO - PingTask started
-2026-04-16 21:57:45,855 - pyrogram.dispatcher - INFO - Started 12 HandlerTasks
-2026-04-16 21:59:41,829 - __main__ - INFO - Queued media from channel 'App Index' (Message ID: 3)
-2026-04-16 21:59:41,832 - __main__ - INFO - Queued media from channel 'App Index' (Message ID: 4)
-2026-04-16 21:59:41,832 - __main__ - INFO - Queued media from channel 'App Index' (Message ID: 5)
-2026-04-16 21:59:41,832 - __main__ - INFO - Processing message 3 in chat -1003727473818
-2026-04-16 21:59:44,192 - __main__ - INFO - Indexed media 3 
-2026-04-16 21:59:44,192 - __main__ - INFO - Processing message 4 in chat -1003727473818
-2026-04-16 21:59:45,018 - __main__ - INFO - Indexed media 4 
-2026-04-16 21:59:45,018 - __main__ - INFO - Processing message 5 in chat -1003727473818
-2026-04-16 21:59:45,592 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
-2026-04-16 22:01:10,215 - __main__ - INFO - Queued media from channel 'App Index' (Message ID: 6)
-2026-04-16 22:01:10,216 - __main__ - INFO - Queued media from channel 'App Index' (Message ID: 7)
-2026-04-16 22:01:10,217 - __main__ - INFO - Queued media from channel 'App Index' (Message ID: 8)
-2026-04-16 22:01:10,217 - __main__ - INFO - Processing message 6 in chat -1003727473818
-2026-04-16 22:01:11,005 - __main__ - INFO - Indexed media 6 
-2026-04-16 22:01:11,007 - __main__ - INFO - Processing message 7 in chat -1003727473818
-2026-04-16 22:01:11,840 - __main__ - INFO - Indexed media 7 
-2026-04-16 22:01:11,840 - __main__ - INFO - Processing message 8 in chat -1003727473818
-2026-04-16 22:01:12,352 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
-2026-04-16 22:05:44,010 - root - INFO - Stop signal received (SIGINT). Exiting...
-2026-04-16 22:05:44,130 - pyrogram.dispatcher - INFO - Stopped 12 HandlerTasks
-2026-04-16 22:05:44,130 - pyrogram.session.session - INFO - PingTask stopped
-2026-04-16 22:05:44,146 - pyrogram.connection.connection - INFO - Disconnected
-2026-04-16 22:05:44,146 - pyrogram.session.session - INFO - NetworkTask stopped
-2026-04-16 22:05:44,148 - pyrogram.session.session - INFO - Session stopped
+2026-04-19 09:22:48,116 - werkzeug - INFO -  * Running on http://192.168.0.105:8080/ (Press CTRL+C to quit)
+2026-04-19 09:22:48,865 - pyrogram.session.auth - INFO - Start creating a new auth key on DC2
+2026-04-19 09:22:48,865 - pyrogram.connection.connection - INFO - Connecting...
+2026-04-19 09:22:49,081 - pyrogram.connection.connection - INFO - Connected! Production DC2 - IPv4
+2026-04-19 09:22:51,605 - pyrogram.session.auth - INFO - Done auth key exchange: DhGenOk
+2026-04-19 09:22:51,605 - pyrogram.connection.connection - INFO - Disconnected
+2026-04-19 09:22:51,623 - pyrogram.connection.connection - INFO - Connecting...
+2026-04-19 09:22:51,841 - pyrogram.connection.connection - INFO - Connected! Production DC2 - IPv4
+2026-04-19 09:22:51,841 - pyrogram.session.session - INFO - NetworkTask started
+2026-04-19 09:22:52,989 - pyrogram.session.session - INFO - Session initialized: Layer 158
+2026-04-19 09:22:52,989 - pyrogram.session.session - INFO - Device: CPython 3.11.9 - Pyrogram 2.0.106
+2026-04-19 09:22:52,989 - pyrogram.session.session - INFO - System: Windows 10 (en)
+2026-04-19 09:22:53,005 - pyrogram.session.session - INFO - Session started
+2026-04-19 09:22:53,005 - pyrogram.session.session - INFO - PingTask started
+2026-04-19 09:22:53,261 - pyrogram.session.session - INFO - PingTask stopped
+2026-04-19 09:22:53,273 - pyrogram.connection.connection - INFO - Disconnected
+2026-04-19 09:22:53,273 - pyrogram.session.session - INFO - NetworkTask stopped
+2026-04-19 09:22:53,273 - pyrogram.session.session - INFO - Session stopped
+2026-04-19 09:22:53,298 - pyrogram.session.auth - INFO - Start creating a new auth key on DC5
+2026-04-19 09:22:53,298 - pyrogram.connection.connection - INFO - Connecting...
+2026-04-19 09:22:53,509 - pyrogram.connection.connection - INFO - Connected! Production DC5 - IPv4
+2026-04-19 09:22:55,867 - pyrogram.session.auth - INFO - Done auth key exchange: DhGenOk
+2026-04-19 09:22:55,867 - pyrogram.connection.connection - INFO - Disconnected
+2026-04-19 09:22:55,895 - pyrogram.connection.connection - INFO - Connecting...
+2026-04-19 09:22:56,140 - pyrogram.connection.connection - INFO - Connected! Production DC5 - IPv4
+2026-04-19 09:22:56,141 - pyrogram.session.session - INFO - NetworkTask started
+2026-04-19 09:22:56,693 - pyrogram.session.session - INFO - Session initialized: Layer 158
+2026-04-19 09:22:56,693 - pyrogram.session.session - INFO - Device: CPython 3.11.9 - Pyrogram 2.0.106
+2026-04-19 09:22:56,693 - pyrogram.session.session - INFO - System: Windows 10 (en)
+2026-04-19 09:22:56,693 - pyrogram.session.session - INFO - Session started
+2026-04-19 09:22:56,693 - pyrogram.session.session - INFO - PingTask started
+2026-04-19 09:22:57,174 - pyrogram.dispatcher - INFO - Started 12 HandlerTasks
+2026-04-19 09:24:25,649 - __main__ - ERROR - Error in /index command: Peer id invalid: -1003727473818
+Traceback (most recent call last):
+  File "C:\Users\first\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pyrogram\methods\advanced\resolve_peer.py", line 62, in resolve_peer
+    return await self.storage.get_peer_by_id(peer_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\first\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pyrogram\storage\sqlite_storage.py", line 142, in get_peer_by_id
+    raise KeyError(f"ID not found: {peer_id}")
+KeyError: 'ID not found: -1003727473818'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\first\Desktop\netti\index\bot.py", line 403, in index_entire_channel
+    latest_messages = [msg async for msg in client.get_chat_history(BIN_CHANNEL, limit=1)]
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\first\Desktop\netti\index\bot.py", line 403, in <listcomp>
+    latest_messages = [msg async for msg in client.get_chat_history(BIN_CHANNEL, limit=1)]
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\first\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pyrogram\methods\messages\get_chat_history.py", line 101, in get_chat_history
+    messages = await get_chunk(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\first\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pyrogram\methods\messages\get_chat_history.py", line 37, in get_chunk
+    peer=await client.resolve_peer(chat_id),
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\first\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pyrogram\methods\advanced\resolve_peer.py", line 89, in resolve_peer
+    peer_type = utils.get_peer_type(peer_id)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\first\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pyrogram\utils.py", line 246, in get_peer_type
+    raise ValueError(f"Peer id invalid: {peer_id}")
+ValueError: Peer id invalid: -1003727473818
+2026-04-19 09:24:31,219 - __main__ - ERROR - Error in /index command: Peer id invalid: -1003727473818
+Traceback (most recent call last):
+  File "C:\Users\first\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pyrogram\methods\advanced\resolve_peer.py", line 62, in resolve_peer
+    return await self.storage.get_peer_by_id(peer_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\first\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pyrogram\storage\sqlite_storage.py", line 142, in get_peer_by_id
+    raise KeyError(f"ID not found: {peer_id}")
+KeyError: 'ID not found: -1003727473818'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\first\Desktop\netti\index\bot.py", line 403, in index_entire_channel
+    latest_messages = [msg async for msg in client.get_chat_history(BIN_CHANNEL, limit=1)]
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\first\Desktop\netti\index\bot.py", line 403, in <listcomp>
+    latest_messages = [msg async for msg in client.get_chat_history(BIN_CHANNEL, limit=1)]
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\first\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pyrogram\methods\messages\get_chat_history.py", line 101, in get_chat_history
+    messages = await get_chunk(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\first\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pyrogram\methods\messages\get_chat_history.py", line 37, in get_chunk
+    peer=await client.resolve_peer(chat_id),
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\first\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pyrogram\methods\advanced\resolve_peer.py", line 89, in resolve_peer
+    peer_type = utils.get_peer_type(peer_id)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\first\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pyrogram\utils.py", line 246, in get_peer_type
+    raise ValueError(f"Peer id invalid: {peer_id}")
+ValueError: Peer id invalid: -1003727473818
+2026-04-19 09:25:51,701 - root - INFO - Stop signal received (SIGINT). Exiting...
+2026-04-19 09:25:51,743 - pyrogram.dispatcher - INFO - Stopped 12 HandlerTasks
+2026-04-19 09:25:51,743 - pyrogram.session.session - INFO - PingTask stopped
+2026-04-19 09:25:51,743 - pyrogram.connection.connection - INFO - Disconnected
+2026-04-19 09:25:51,743 - pyrogram.session.session - INFO - NetworkTask stopped
+2026-04-19 09:25:51,743 - pyrogram.session.session - INFO - Session stopped
+2026-04-19 09:26:44,022 - werkzeug - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2026-04-19 09:26:44,023 - werkzeug - INFO -  * Running on http://192.168.0.105:8080/ (Press CTRL+C to quit)
+2026-04-19 09:26:44,576 - pyrogram.connection.connection - INFO - Connecting...
+2026-04-19 09:26:44,914 - pyrogram.connection.connection - INFO - Connected! Production DC5 - IPv4
+2026-04-19 09:26:44,917 - pyrogram.session.session - INFO - NetworkTask started
+2026-04-19 09:26:45,778 - pyrogram.session.session - INFO - Session initialized: Layer 158
+2026-04-19 09:26:45,778 - pyrogram.session.session - INFO - Device: CPython 3.11.9 - Pyrogram 2.0.106
+2026-04-19 09:26:45,778 - pyrogram.session.session - INFO - System: Windows 10 (en)
+2026-04-19 09:26:45,778 - pyrogram.session.session - INFO - Session started
+2026-04-19 09:26:45,793 - pyrogram.session.session - INFO - PingTask started
+2026-04-19 09:26:46,245 - pyrogram.dispatcher - INFO - Started 12 HandlerTasks
+2026-04-19 09:26:56,432 - __main__ - ERROR - Error in /index command: Telegram says: [400 PEER_ID_INVALID] - The peer id being used is invalid or not known yet. Make sure you meet the peer before interacting with it 
+Traceback (most recent call last):
+  File "C:\Users\first\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pyrogram\methods\advanced\resolve_peer.py", line 62, in resolve_peer
+    return await self.storage.get_peer_by_id(peer_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\first\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pyrogram\storage\sqlite_storage.py", line 142, in get_peer_by_id
+    raise KeyError(f"ID not found: {peer_id}")
+KeyError: 'ID not found: -1003727473818'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\first\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pyrogram\methods\advanced\resolve_peer.py", line 85, in resolve_peer
+    return await self.storage.get_peer_by_phone_number(peer_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\first\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pyrogram\storage\sqlite_storage.py", line 168, in get_peer_by_phone_number
+    raise KeyError(f"Phone number not found: {phone_number}")
+KeyError: 'Phone number not found: -1003727473818'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\first\Desktop\netti\index\bot.py", line 403, in index_entire_channel
+    latest_messages = [msg async for msg in client.get_chat_history(BIN_CHANNEL, limit=1)]
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\first\Desktop\netti\index\bot.py", line 403, in <listcomp>
+    latest_messages = [msg async for msg in client.get_chat_history(BIN_CHANNEL, limit=1)]
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\first\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pyrogram\methods\messages\get_chat_history.py", line 101, in get_chat_history
+    messages = await get_chunk(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\first\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pyrogram\methods\messages\get_chat_history.py", line 37, in get_chunk
+    peer=await client.resolve_peer(chat_id),
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\first\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pyrogram\methods\advanced\resolve_peer.py", line 87, in resolve_peer
+    raise PeerIdInvalid
+pyrogram.errors.exceptions.bad_request_400.PeerIdInvalid: Telegram says: [400 PEER_ID_INVALID] - The peer id being used is invalid or not known yet. Make sure you meet the peer before interacting with it 
+2026-04-19 09:30:01,022 - root - INFO - Stop signal received (SIGINT). Exiting...
+2026-04-19 09:30:01,033 - pyrogram.dispatcher - INFO - Stopped 12 HandlerTasks
+2026-04-19 09:30:01,033 - pyrogram.session.session - INFO - PingTask stopped
+2026-04-19 09:30:01,036 - pyrogram.connection.connection - INFO - Disconnected
+2026-04-19 09:30:01,036 - pyrogram.session.session - INFO - NetworkTask stopped
+2026-04-19 09:30:01,036 - pyrogram.session.session - INFO - Session stopped
+2026-04-19 09:30:27,370 - werkzeug - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2026-04-19 09:30:27,370 - werkzeug - INFO -  * Running on http://192.168.0.105:8080/ (Press CTRL+C to quit)
+2026-04-19 09:30:27,967 - pyrogram.connection.connection - INFO - Connecting...
+2026-04-19 09:30:28,547 - pyrogram.connection.connection - INFO - Connected! Production DC5 - IPv4
+2026-04-19 09:30:28,547 - pyrogram.session.session - INFO - NetworkTask started
+2026-04-19 09:30:29,801 - pyrogram.session.session - INFO - Session initialized: Layer 158
+2026-04-19 09:30:29,803 - pyrogram.session.session - INFO - Device: CPython 3.11.9 - Pyrogram 2.0.106
+2026-04-19 09:30:29,803 - pyrogram.session.session - INFO - System: Windows 10 (en)
+2026-04-19 09:30:29,803 - pyrogram.session.session - INFO - Session started
+2026-04-19 09:30:29,811 - pyrogram.session.session - INFO - PingTask started
+2026-04-19 09:30:30,451 - pyrogram.dispatcher - INFO - Started 12 HandlerTasks
+2026-04-19 09:30:34,117 - __main__ - ERROR - Error in /index command: Telegram says: [400 PEER_ID_INVALID] - The peer id being used is invalid or not known yet. Make sure you meet the peer before interacting with it 
+Traceback (most recent call last):
+  File "C:\Users\first\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pyrogram\methods\advanced\resolve_peer.py", line 62, in resolve_peer
+    return await self.storage.get_peer_by_id(peer_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\first\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pyrogram\storage\sqlite_storage.py", line 142, in get_peer_by_id
+    raise KeyError(f"ID not found: {peer_id}")
+KeyError: 'ID not found: -1003727473818'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\first\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pyrogram\methods\advanced\resolve_peer.py", line 85, in resolve_peer
+    return await self.storage.get_peer_by_phone_number(peer_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\first\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pyrogram\storage\sqlite_storage.py", line 168, in get_peer_by_phone_number
+    raise KeyError(f"Phone number not found: {phone_number}")
+KeyError: 'Phone number not found: -1003727473818'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\first\Desktop\netti\index\bot.py", line 403, in index_entire_channel
+    latest_messages = [msg async for msg in client.get_chat_history(BIN_CHANNEL, limit=1)]
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\first\Desktop\netti\index\bot.py", line 403, in <listcomp>
+    latest_messages = [msg async for msg in client.get_chat_history(BIN_CHANNEL, limit=1)]
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\first\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pyrogram\methods\messages\get_chat_history.py", line 101, in get_chat_history
+    messages = await get_chunk(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\first\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pyrogram\methods\messages\get_chat_history.py", line 37, in get_chunk
+    peer=await client.resolve_peer(chat_id),
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\first\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pyrogram\methods\advanced\resolve_peer.py", line 87, in resolve_peer
+    raise PeerIdInvalid
+pyrogram.errors.exceptions.bad_request_400.PeerIdInvalid: Telegram says: [400 PEER_ID_INVALID] - The peer id being used is invalid or not known yet. Make sure you meet the peer before interacting with it 
+2026-04-19 09:31:31,346 - root - INFO - Stop signal received (SIGINT). Exiting...
+2026-04-19 09:31:31,371 - pyrogram.dispatcher - INFO - Stopped 12 HandlerTasks
+2026-04-19 09:31:31,373 - pyrogram.session.session - INFO - PingTask stopped
+2026-04-19 09:31:31,373 - pyrogram.connection.connection - INFO - Disconnected
+2026-04-19 09:31:31,373 - pyrogram.session.session - INFO - NetworkTask stopped
+2026-04-19 09:31:31,373 - pyrogram.session.session - INFO - Session stopped
+2026-04-19 09:31:48,825 - werkzeug - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2026-04-19 09:31:48,825 - werkzeug - INFO -  * Running on http://192.168.0.105:8080/ (Press CTRL+C to quit)
+2026-04-19 09:31:49,419 - pyrogram.connection.connection - INFO - Connecting...
+2026-04-19 09:31:49,492 - pyrogram.connection.connection - INFO - Connected! Production DC5 - IPv4
+2026-04-19 09:31:49,492 - pyrogram.session.session - INFO - NetworkTask started
+2026-04-19 09:31:49,802 - pyrogram.session.session - INFO - Session initialized: Layer 158
+2026-04-19 09:31:49,802 - pyrogram.session.session - INFO - Device: CPython 3.11.9 - Pyrogram 2.0.106
+2026-04-19 09:31:49,802 - pyrogram.session.session - INFO - System: Windows 10 (en)
+2026-04-19 09:31:49,802 - pyrogram.session.session - INFO - Session started
+2026-04-19 09:31:49,809 - pyrogram.session.session - INFO - PingTask started
+2026-04-19 09:31:49,952 - pyrogram.dispatcher - INFO - Started 12 HandlerTasks
+2026-04-19 09:31:53,345 - __main__ - ERROR - Error in /index command: Telegram says: [400 PEER_ID_INVALID] - The peer id being used is invalid or not known yet. Make sure you meet the peer before interacting with it 
+Traceback (most recent call last):
+  File "C:\Users\first\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pyrogram\methods\advanced\resolve_peer.py", line 62, in resolve_peer
+    return await self.storage.get_peer_by_id(peer_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\first\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pyrogram\storage\sqlite_storage.py", line 142, in get_peer_by_id
+    raise KeyError(f"ID not found: {peer_id}")
+KeyError: 'ID not found: -1003727473818'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\first\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pyrogram\methods\advanced\resolve_peer.py", line 85, in resolve_peer
+    return await self.storage.get_peer_by_phone_number(peer_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\first\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pyrogram\storage\sqlite_storage.py", line 168, in get_peer_by_phone_number
+    raise KeyError(f"Phone number not found: {phone_number}")
+KeyError: 'Phone number not found: -1003727473818'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\first\Desktop\netti\index\bot.py", line 414, in index_entire_channel
+    latest_messages = [msg async for msg in client.get_chat_history(BIN_CHANNEL, limit=1)]
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\first\Desktop\netti\index\bot.py", line 414, in <listcomp>
+    latest_messages = [msg async for msg in client.get_chat_history(BIN_CHANNEL, limit=1)]
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\first\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pyrogram\methods\messages\get_chat_history.py", line 101, in get_chat_history
+    messages = await get_chunk(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\first\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pyrogram\methods\messages\get_chat_history.py", line 37, in get_chunk
+    peer=await client.resolve_peer(chat_id),
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\first\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pyrogram\methods\advanced\resolve_peer.py", line 87, in resolve_peer
+    raise PeerIdInvalid
+pyrogram.errors.exceptions.bad_request_400.PeerIdInvalid: Telegram says: [400 PEER_ID_INVALID] - The peer id being used is invalid or not known yet. Make sure you meet the peer before interacting with it 
+2026-04-19 09:33:35,233 - root - INFO - Stop signal received (SIGINT). Exiting...
+2026-04-19 09:33:35,255 - pyrogram.dispatcher - INFO - Stopped 12 HandlerTasks
+2026-04-19 09:33:35,255 - pyrogram.session.session - INFO - PingTask stopped
+2026-04-19 09:33:35,256 - pyrogram.connection.connection - INFO - Disconnected
+2026-04-19 09:33:35,256 - pyrogram.session.session - INFO - NetworkTask stopped
+2026-04-19 09:33:35,256 - pyrogram.session.session - INFO - Session stopped
+2026-04-19 09:34:38,230 - werkzeug - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2026-04-19 09:34:38,230 - werkzeug - INFO -  * Running on http://192.168.0.105:8080/ (Press CTRL+C to quit)
+2026-04-19 09:34:38,811 - pyrogram.connection.connection - INFO - Connecting...
+2026-04-19 09:34:39,013 - pyrogram.connection.connection - INFO - Connected! Production DC5 - IPv4
+2026-04-19 09:34:39,016 - pyrogram.session.session - INFO - NetworkTask started
+2026-04-19 09:34:39,378 - pyrogram.session.session - INFO - Session initialized: Layer 158
+2026-04-19 09:34:39,378 - pyrogram.session.session - INFO - Device: CPython 3.11.9 - Pyrogram 2.0.106
+2026-04-19 09:34:39,378 - pyrogram.session.session - INFO - System: Windows 10 (en)
+2026-04-19 09:34:39,378 - pyrogram.session.session - INFO - Session started
+2026-04-19 09:34:39,378 - pyrogram.session.session - INFO - PingTask started
+2026-04-19 09:34:39,538 - pyrogram.dispatcher - INFO - Started 12 HandlerTasks
+2026-04-19 09:34:43,995 - __main__ - ERROR - Error in /index command: Telegram says: [400 BOT_METHOD_INVALID] - The method can't be used by bots (caused by "messages.GetHistory")
+Traceback (most recent call last):
+  File "C:\Users\first\Desktop\netti\index\bot.py", line 414, in index_entire_channel
+    latest_messages = [msg async for msg in client.get_chat_history(int(BIN_CHANNEL), limit=1)]
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\first\Desktop\netti\index\bot.py", line 414, in <listcomp>
+    latest_messages = [msg async for msg in client.get_chat_history(int(BIN_CHANNEL), limit=1)]
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\first\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pyrogram\methods\messages\get_chat_history.py", line 101, in get_chat_history
+    messages = await get_chunk(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\first\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pyrogram\methods\messages\get_chat_history.py", line 35, in get_chunk
+    messages = await client.invoke(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\first\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pyrogram\methods\advanced\invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\first\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pyrogram\session\session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\first\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pyrogram\session\session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "C:\Users\first\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pyrogram\errors\rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.BotMethodInvalid: Telegram says: [400 BOT_METHOD_INVALID] - The method can't be used by bots (caused by "messages.GetHistory")
+2026-04-19 09:36:07,301 - root - INFO - Stop signal received (SIGINT). Exiting...
+2026-04-19 09:36:07,333 - pyrogram.dispatcher - INFO - Stopped 12 HandlerTasks
+2026-04-19 09:36:07,333 - pyrogram.session.session - INFO - PingTask stopped
+2026-04-19 09:36:07,333 - pyrogram.connection.connection - INFO - Disconnected
+2026-04-19 09:36:07,333 - pyrogram.session.session - INFO - NetworkTask stopped
+2026-04-19 09:36:07,333 - pyrogram.session.session - INFO - Session stopped
+2026-04-19 09:36:27,559 - werkzeug - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2026-04-19 09:36:27,561 - werkzeug - INFO -  * Running on http://192.168.0.105:8080/ (Press CTRL+C to quit)
+2026-04-19 09:36:28,130 - pyrogram.connection.connection - INFO - Connecting...
+2026-04-19 09:36:28,184 - pyrogram.connection.connection - INFO - Connected! Production DC5 - IPv4
+2026-04-19 09:36:28,184 - pyrogram.session.session - INFO - NetworkTask started
+2026-04-19 09:36:28,624 - pyrogram.session.session - INFO - Session initialized: Layer 158
+2026-04-19 09:36:28,624 - pyrogram.session.session - INFO - Device: CPython 3.11.9 - Pyrogram 2.0.106
+2026-04-19 09:36:28,624 - pyrogram.session.session - INFO - System: Windows 10 (en)
+2026-04-19 09:36:28,624 - pyrogram.session.session - INFO - Session started
+2026-04-19 09:36:28,632 - pyrogram.session.session - INFO - PingTask started
+2026-04-19 09:36:28,969 - pyrogram.dispatcher - INFO - Started 12 HandlerTasks
+2026-04-19 09:36:35,014 - __main__ - INFO - Processing message 3 in chat -1003727473818
+2026-04-19 09:36:37,170 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:36:37,170 - __main__ - INFO - Processing message 4 in chat -1003727473818
+2026-04-19 09:36:37,815 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:36:37,815 - __main__ - INFO - Processing message 5 in chat -1003727473818
+2026-04-19 09:36:38,425 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:36:38,425 - __main__ - INFO - Processing message 6 in chat -1003727473818
+2026-04-19 09:36:38,922 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:36:38,922 - __main__ - INFO - Processing message 7 in chat -1003727473818
+2026-04-19 09:36:39,429 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:36:39,429 - __main__ - INFO - Processing message 8 in chat -1003727473818
+2026-04-19 09:36:39,957 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:36:39,957 - __main__ - INFO - Processing message 9 in chat -1003727473818
+2026-04-19 09:36:40,554 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:36:40,557 - __main__ - INFO - Processing message 10 in chat -1003727473818
+2026-04-19 09:36:41,201 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:36:41,206 - __main__ - INFO - Processing message 11 in chat -1003727473818
+2026-04-19 09:36:41,878 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:36:41,878 - __main__ - INFO - Processing message 12 in chat -1003727473818
+2026-04-19 09:36:42,538 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:36:42,538 - __main__ - INFO - Processing message 13 in chat -1003727473818
+2026-04-19 09:36:43,049 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:36:43,049 - __main__ - INFO - Processing message 14 in chat -1003727473818
+2026-04-19 09:36:43,632 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:36:43,632 - __main__ - INFO - Processing message 15 in chat -1003727473818
+2026-04-19 09:36:44,262 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:36:44,262 - __main__ - INFO - Processing message 16 in chat -1003727473818
+2026-04-19 09:36:44,862 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:36:44,864 - __main__ - INFO - Processing message 17 in chat -1003727473818
+2026-04-19 09:36:45,474 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:36:45,476 - __main__ - INFO - Processing message 18 in chat -1003727473818
+2026-04-19 09:36:46,239 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:36:46,239 - __main__ - INFO - Processing message 19 in chat -1003727473818
+2026-04-19 09:36:46,830 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:36:46,830 - __main__ - INFO - Processing message 20 in chat -1003727473818
+2026-04-19 09:36:47,404 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:36:47,404 - __main__ - INFO - Processing message 21 in chat -1003727473818
+2026-04-19 09:36:48,039 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:36:48,039 - __main__ - INFO - Processing message 22 in chat -1003727473818
+2026-04-19 09:36:48,676 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:36:48,679 - __main__ - INFO - Processing message 23 in chat -1003727473818
+2026-04-19 09:36:49,638 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:36:49,638 - __main__ - INFO - Processing message 24 in chat -1003727473818
+2026-04-19 09:36:50,214 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:36:50,214 - __main__ - INFO - Processing message 25 in chat -1003727473818
+2026-04-19 09:36:50,806 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:36:50,806 - __main__ - INFO - Processing message 26 in chat -1003727473818
+2026-04-19 09:36:51,533 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:36:51,536 - __main__ - INFO - Processing message 27 in chat -1003727473818
+2026-04-19 09:36:52,128 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:36:52,142 - __main__ - INFO - Processing message 28 in chat -1003727473818
+2026-04-19 09:36:52,797 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:36:52,797 - __main__ - INFO - Processing message 29 in chat -1003727473818
+2026-04-19 09:36:53,758 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:36:53,758 - __main__ - INFO - Processing message 30 in chat -1003727473818
+2026-04-19 09:36:54,287 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:36:54,295 - __main__ - INFO - Processing message 31 in chat -1003727473818
+2026-04-19 09:36:55,263 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:36:55,263 - __main__ - INFO - Processing message 32 in chat -1003727473818
+2026-04-19 09:36:55,833 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:36:55,833 - __main__ - INFO - Processing message 33 in chat -1003727473818
+2026-04-19 09:36:56,462 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:36:56,462 - __main__ - INFO - Processing message 35 in chat -1003727473818
+2026-04-19 09:36:57,664 - __main__ - INFO - Indexed media 35 
+2026-04-19 09:36:57,664 - __main__ - INFO - Processing message 36 in chat -1003727473818
+2026-04-19 09:36:58,611 - __main__ - INFO - Indexed media 36 
+2026-04-19 09:36:58,613 - __main__ - INFO - Processing message 37 in chat -1003727473818
+2026-04-19 09:36:59,672 - __main__ - INFO - Indexed media 37 
+2026-04-19 09:36:59,672 - __main__ - INFO - Processing message 38 in chat -1003727473818
+2026-04-19 09:37:00,525 - __main__ - INFO - Indexed media 38 
+2026-04-19 09:37:00,525 - __main__ - INFO - Processing message 39 in chat -1003727473818
+2026-04-19 09:37:01,155 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:37:01,155 - __main__ - INFO - Processing message 40 in chat -1003727473818
+2026-04-19 09:37:02,054 - __main__ - INFO - Indexed media 40 
+2026-04-19 09:37:02,054 - __main__ - INFO - Processing message 41 in chat -1003727473818
+2026-04-19 09:37:03,032 - __main__ - INFO - Indexed media 41 
+2026-04-19 09:37:03,032 - __main__ - INFO - Processing message 42 in chat -1003727473818
+2026-04-19 09:37:04,030 - __main__ - INFO - Indexed media 42 
+2026-04-19 09:37:04,030 - __main__ - INFO - Processing message 43 in chat -1003727473818
+2026-04-19 09:37:04,926 - __main__ - INFO - Indexed media 43 
+2026-04-19 09:37:04,928 - __main__ - INFO - Processing message 44 in chat -1003727473818
+2026-04-19 09:37:06,075 - __main__ - INFO - Indexed media 44 
+2026-04-19 09:37:06,075 - __main__ - INFO - Processing message 45 in chat -1003727473818
+2026-04-19 09:37:07,222 - __main__ - INFO - Indexed media 45 
+2026-04-19 09:37:07,222 - __main__ - INFO - Processing message 46 in chat -1003727473818
+2026-04-19 09:37:08,009 - __main__ - INFO - Indexed media 46 
+2026-04-19 09:37:08,010 - __main__ - INFO - Processing message 47 in chat -1003727473818
+2026-04-19 09:37:08,922 - __main__ - INFO - Indexed media 47 
+2026-04-19 09:37:08,922 - __main__ - INFO - Processing message 48 in chat -1003727473818
+2026-04-19 09:37:09,652 - __main__ - INFO - Indexed media 48 
+2026-04-19 09:37:09,652 - __main__ - INFO - Processing message 49 in chat -1003727473818
+2026-04-19 09:37:10,481 - __main__ - INFO - Indexed media 49 
+2026-04-19 09:37:10,481 - __main__ - INFO - Processing message 50 in chat -1003727473818
+2026-04-19 09:37:11,492 - __main__ - INFO - Indexed media 50 
+2026-04-19 09:37:11,492 - __main__ - INFO - Processing message 51 in chat -1003727473818
+2026-04-19 09:37:12,298 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:37:12,298 - __main__ - INFO - Processing message 52 in chat -1003727473818
+2026-04-19 09:37:12,922 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:37:12,922 - __main__ - INFO - Processing message 53 in chat -1003727473818
+2026-04-19 09:37:13,534 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:37:13,534 - __main__ - INFO - Processing message 54 in chat -1003727473818
+2026-04-19 09:37:14,340 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:37:14,340 - __main__ - INFO - Processing message 55 in chat -1003727473818
+2026-04-19 09:37:14,958 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:37:14,961 - __main__ - INFO - Processing message 56 in chat -1003727473818
+2026-04-19 09:37:15,582 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:37:15,582 - __main__ - INFO - Processing message 57 in chat -1003727473818
+2026-04-19 09:37:16,120 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:37:16,120 - __main__ - INFO - Processing message 58 in chat -1003727473818
+2026-04-19 09:37:17,033 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:37:17,033 - __main__ - INFO - Processing message 59 in chat -1003727473818
+2026-04-19 09:37:17,646 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:37:17,646 - __main__ - INFO - Processing message 60 in chat -1003727473818
+2026-04-19 09:37:18,328 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:37:18,344 - __main__ - INFO - Processing message 61 in chat -1003727473818
+2026-04-19 09:37:18,981 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:37:18,983 - __main__ - INFO - Processing message 62 in chat -1003727473818
+2026-04-19 09:37:19,592 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:37:19,592 - __main__ - INFO - Processing message 63 in chat -1003727473818
+2026-04-19 09:37:20,306 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:37:20,312 - __main__ - INFO - Processing message 64 in chat -1003727473818
+2026-04-19 09:37:20,802 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:37:20,818 - __main__ - INFO - Processing message 65 in chat -1003727473818
+2026-04-19 09:37:21,407 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:37:21,407 - __main__ - INFO - Processing message 66 in chat -1003727473818
+2026-04-19 09:37:22,227 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:37:22,227 - __main__ - INFO - Processing message 67 in chat -1003727473818
+2026-04-19 09:37:22,894 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:37:22,894 - __main__ - INFO - Processing message 68 in chat -1003727473818
+2026-04-19 09:37:23,471 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:37:23,471 - __main__ - INFO - Processing message 69 in chat -1003727473818
+2026-04-19 09:37:24,081 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:37:24,081 - __main__ - INFO - Processing message 70 in chat -1003727473818
+2026-04-19 09:37:24,712 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:37:24,715 - __main__ - INFO - Processing message 71 in chat -1003727473818
+2026-04-19 09:37:25,307 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:37:25,307 - __main__ - INFO - Processing message 72 in chat -1003727473818
+2026-04-19 09:37:25,982 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:37:25,982 - __main__ - INFO - Processing message 73 in chat -1003727473818
+2026-04-19 09:37:26,644 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:37:26,651 - pyrogram.session.session - INFO - NetworkTask stopped
+2026-04-19 09:37:26,651 - pyrogram.session.session - INFO - PingTask stopped
+2026-04-19 09:37:26,653 - pyrogram.connection.connection - INFO - Disconnected
+2026-04-19 09:37:26,653 - pyrogram.session.session - INFO - Session stopped
+2026-04-19 09:37:26,654 - pyrogram.connection.connection - INFO - Connecting...
+2026-04-19 09:37:26,708 - pyrogram.connection.connection - INFO - Connected! Production DC5 - IPv4
+2026-04-19 09:37:26,708 - pyrogram.session.session - INFO - NetworkTask started
+2026-04-19 09:37:27,365 - pyrogram.session.session - INFO - Session initialized: Layer 158
+2026-04-19 09:37:27,365 - pyrogram.session.session - INFO - Device: CPython 3.11.9 - Pyrogram 2.0.106
+2026-04-19 09:37:27,365 - pyrogram.session.session - INFO - System: Windows 10 (en)
+2026-04-19 09:37:27,365 - pyrogram.session.session - INFO - Session started
+2026-04-19 09:37:27,365 - pyrogram.session.session - INFO - PingTask started
+2026-04-19 09:37:41,659 - pyrogram.session.session - INFO - [1] Retrying "messages.EditMessage" due to: Request timed out
+2026-04-19 09:39:22,560 - root - INFO - Stop signal received (SIGINT). Exiting...
+2026-04-19 09:39:22,581 - pyrogram.dispatcher - INFO - Stopped 12 HandlerTasks
+2026-04-19 09:39:22,581 - pyrogram.session.session - INFO - PingTask stopped
+2026-04-19 09:39:22,581 - pyrogram.connection.connection - INFO - Disconnected
+2026-04-19 09:39:22,581 - pyrogram.session.session - INFO - NetworkTask stopped
+2026-04-19 09:39:22,581 - pyrogram.session.session - INFO - Session stopped
+2026-04-19 09:39:36,979 - werkzeug - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2026-04-19 09:39:36,979 - werkzeug - INFO -  * Running on http://192.168.0.105:8080/ (Press CTRL+C to quit)
+2026-04-19 09:39:37,595 - pyrogram.connection.connection - INFO - Connecting...
+2026-04-19 09:39:37,777 - pyrogram.connection.connection - INFO - Connected! Production DC5 - IPv4
+2026-04-19 09:39:37,793 - pyrogram.session.session - INFO - NetworkTask started
+2026-04-19 09:39:38,837 - pyrogram.session.session - INFO - Session initialized: Layer 158
+2026-04-19 09:39:38,837 - pyrogram.session.session - INFO - Device: CPython 3.11.9 - Pyrogram 2.0.106
+2026-04-19 09:39:38,837 - pyrogram.session.session - INFO - System: Windows 10 (en)
+2026-04-19 09:39:38,837 - pyrogram.session.session - INFO - Session started
+2026-04-19 09:39:38,844 - pyrogram.session.session - INFO - PingTask started
+2026-04-19 09:39:39,554 - pyrogram.dispatcher - INFO - Started 12 HandlerTasks
+2026-04-19 09:39:45,114 - __main__ - INFO - Processing message 3 in chat -1003727473818
+2026-04-19 09:39:47,342 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:39:47,342 - __main__ - INFO - Processing message 4 in chat -1003727473818
+2026-04-19 09:39:47,955 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:39:47,955 - __main__ - INFO - Processing message 5 in chat -1003727473818
+2026-04-19 09:39:48,579 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:39:48,579 - __main__ - INFO - Processing message 6 in chat -1003727473818
+2026-04-19 09:39:49,189 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:39:49,193 - __main__ - INFO - Processing message 7 in chat -1003727473818
+2026-04-19 09:39:49,840 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:39:49,840 - __main__ - INFO - Processing message 8 in chat -1003727473818
+2026-04-19 09:39:50,420 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:39:50,420 - __main__ - INFO - Processing message 9 in chat -1003727473818
+2026-04-19 09:39:51,027 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:39:51,027 - __main__ - INFO - Processing message 10 in chat -1003727473818
+2026-04-19 09:39:51,806 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:39:51,806 - __main__ - INFO - Processing message 11 in chat -1003727473818
+2026-04-19 09:39:52,460 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:39:52,461 - __main__ - INFO - Processing message 12 in chat -1003727473818
+2026-04-19 09:39:52,957 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:39:52,957 - __main__ - INFO - Processing message 13 in chat -1003727473818
+2026-04-19 09:39:53,527 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:39:53,527 - __main__ - INFO - Processing message 14 in chat -1003727473818
+2026-04-19 09:39:54,194 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:39:54,194 - __main__ - INFO - Processing message 15 in chat -1003727473818
+2026-04-19 09:39:54,700 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:39:54,700 - __main__ - INFO - Processing message 16 in chat -1003727473818
+2026-04-19 09:39:55,311 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:39:55,323 - __main__ - INFO - Processing message 17 in chat -1003727473818
+2026-04-19 09:39:55,986 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:39:55,986 - __main__ - INFO - Processing message 18 in chat -1003727473818
+2026-04-19 09:39:56,744 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:39:56,744 - __main__ - INFO - Processing message 19 in chat -1003727473818
+2026-04-19 09:39:57,264 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:39:57,264 - __main__ - INFO - Processing message 20 in chat -1003727473818
+2026-04-19 09:39:58,000 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:39:58,000 - __main__ - INFO - Processing message 21 in chat -1003727473818
+2026-04-19 09:39:58,601 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:39:58,604 - __main__ - INFO - Processing message 22 in chat -1003727473818
+2026-04-19 09:39:59,130 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:39:59,130 - __main__ - INFO - Processing message 23 in chat -1003727473818
+2026-04-19 09:39:59,634 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:39:59,634 - __main__ - INFO - Processing message 24 in chat -1003727473818
+2026-04-19 09:40:00,187 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:40:00,188 - __main__ - INFO - Processing message 25 in chat -1003727473818
+2026-04-19 09:40:00,660 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:40:00,660 - __main__ - INFO - Processing message 26 in chat -1003727473818
+2026-04-19 09:40:01,308 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:40:01,308 - __main__ - INFO - Processing message 27 in chat -1003727473818
+2026-04-19 09:40:01,876 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:40:01,876 - __main__ - INFO - Processing message 28 in chat -1003727473818
+2026-04-19 09:40:02,607 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:40:02,607 - __main__ - INFO - Processing message 29 in chat -1003727473818
+2026-04-19 09:40:03,181 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:40:03,181 - __main__ - INFO - Processing message 30 in chat -1003727473818
+2026-04-19 09:40:03,878 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:40:03,878 - __main__ - INFO - Processing message 31 in chat -1003727473818
+2026-04-19 09:40:04,544 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:40:04,544 - __main__ - INFO - Processing message 32 in chat -1003727473818
+2026-04-19 09:40:05,244 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:40:05,244 - __main__ - INFO - Processing message 33 in chat -1003727473818
+2026-04-19 09:40:05,895 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:40:05,895 - __main__ - INFO - Processing message 35 in chat -1003727473818
+2026-04-19 09:40:06,589 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:40:06,589 - __main__ - INFO - Processing message 36 in chat -1003727473818
+2026-04-19 09:40:07,106 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:40:07,106 - __main__ - INFO - Processing message 37 in chat -1003727473818
+2026-04-19 09:40:07,678 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:40:07,678 - __main__ - INFO - Processing message 38 in chat -1003727473818
+2026-04-19 09:40:08,579 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:40:08,579 - __main__ - INFO - Processing message 39 in chat -1003727473818
+2026-04-19 09:40:09,143 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:40:09,143 - __main__ - INFO - Processing message 40 in chat -1003727473818
+2026-04-19 09:40:09,868 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:40:09,869 - __main__ - INFO - Processing message 41 in chat -1003727473818
+2026-04-19 09:40:10,460 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:40:10,465 - __main__ - INFO - Processing message 42 in chat -1003727473818
+2026-04-19 09:40:11,011 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:40:11,025 - __main__ - INFO - Processing message 43 in chat -1003727473818
+2026-04-19 09:40:11,626 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:40:11,626 - __main__ - INFO - Processing message 44 in chat -1003727473818
+2026-04-19 09:40:12,210 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:40:12,210 - __main__ - INFO - Processing message 45 in chat -1003727473818
+2026-04-19 09:40:12,860 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:40:12,860 - __main__ - INFO - Processing message 46 in chat -1003727473818
+2026-04-19 09:40:13,446 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:40:13,446 - __main__ - INFO - Processing message 47 in chat -1003727473818
+2026-04-19 09:40:14,085 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:40:14,085 - __main__ - INFO - Processing message 48 in chat -1003727473818
+2026-04-19 09:40:14,697 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:40:14,699 - __main__ - INFO - Processing message 49 in chat -1003727473818
+2026-04-19 09:40:15,294 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:40:15,294 - __main__ - INFO - Processing message 50 in chat -1003727473818
+2026-04-19 09:40:15,898 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:40:15,900 - __main__ - INFO - Processing message 51 in chat -1003727473818
+2026-04-19 09:40:16,673 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:40:16,673 - __main__ - INFO - Processing message 52 in chat -1003727473818
+2026-04-19 09:40:17,336 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:40:17,336 - __main__ - INFO - Processing message 53 in chat -1003727473818
+2026-04-19 09:40:17,959 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:40:17,967 - __main__ - INFO - Processing message 54 in chat -1003727473818
+2026-04-19 09:40:18,576 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:40:18,576 - __main__ - INFO - Processing message 55 in chat -1003727473818
+2026-04-19 09:40:19,076 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:40:19,076 - __main__ - INFO - Processing message 56 in chat -1003727473818
+2026-04-19 09:40:19,713 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:40:19,713 - __main__ - INFO - Processing message 57 in chat -1003727473818
+2026-04-19 09:40:20,309 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:40:20,309 - __main__ - INFO - Processing message 58 in chat -1003727473818
+2026-04-19 09:40:20,849 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:40:20,849 - __main__ - INFO - Processing message 59 in chat -1003727473818
+2026-04-19 09:40:21,337 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:40:21,337 - __main__ - INFO - Processing message 60 in chat -1003727473818
+2026-04-19 09:40:21,972 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:40:21,975 - __main__ - INFO - Processing message 61 in chat -1003727473818
+2026-04-19 09:40:22,560 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:40:22,562 - __main__ - INFO - Processing message 62 in chat -1003727473818
+2026-04-19 09:40:23,177 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:40:23,177 - __main__ - INFO - Processing message 63 in chat -1003727473818
+2026-04-19 09:40:23,826 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:40:23,826 - __main__ - INFO - Processing message 64 in chat -1003727473818
+2026-04-19 09:40:24,443 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:40:24,443 - __main__ - INFO - Processing message 65 in chat -1003727473818
+2026-04-19 09:40:25,026 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:40:25,026 - __main__ - INFO - Processing message 66 in chat -1003727473818
+2026-04-19 09:40:25,631 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:40:25,631 - __main__ - INFO - Processing message 67 in chat -1003727473818
+2026-04-19 09:40:26,243 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:40:26,243 - __main__ - INFO - Processing message 68 in chat -1003727473818
+2026-04-19 09:40:26,877 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:40:26,877 - __main__ - INFO - Processing message 69 in chat -1003727473818
+2026-04-19 09:40:27,410 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:40:27,410 - __main__ - INFO - Processing message 70 in chat -1003727473818
+2026-04-19 09:40:28,059 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:40:28,059 - __main__ - INFO - Processing message 71 in chat -1003727473818
+2026-04-19 09:40:28,699 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:40:28,699 - __main__ - INFO - Processing message 72 in chat -1003727473818
+2026-04-19 09:40:29,378 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:40:29,380 - __main__ - INFO - Processing message 73 in chat -1003727473818
+2026-04-19 09:40:30,260 - __main__ - INFO - Duplicate detected by dedup_key; skipping insert.
+2026-04-19 09:40:30,260 - pyrogram.session.session - INFO - NetworkTask stopped
+2026-04-19 09:40:30,260 - pyrogram.session.session - INFO - PingTask stopped
+2026-04-19 09:40:30,260 - pyrogram.connection.connection - INFO - Disconnected
+2026-04-19 09:40:30,260 - pyrogram.session.session - INFO - Session stopped
+2026-04-19 09:40:30,260 - pyrogram.connection.connection - INFO - Connecting...
+2026-04-19 09:40:30,361 - pyrogram.connection.connection - INFO - Connected! Production DC5 - IPv4
+2026-04-19 09:40:30,361 - pyrogram.session.session - INFO - NetworkTask started
+2026-04-19 09:40:31,029 - pyrogram.session.session - INFO - Session initialized: Layer 158
+2026-04-19 09:40:31,029 - pyrogram.session.session - INFO - Device: CPython 3.11.9 - Pyrogram 2.0.106
+2026-04-19 09:40:31,029 - pyrogram.session.session - INFO - System: Windows 10 (en)
+2026-04-19 09:40:31,029 - pyrogram.session.session - INFO - Session started
+2026-04-19 09:40:31,029 - pyrogram.session.session - INFO - PingTask started
+2026-04-19 09:40:45,265 - pyrogram.session.session - INFO - [1] Retrying "messages.EditMessage" due to: Request timed out
